@@ -46,3 +46,19 @@ tags:
 - **Graph DB for Interconnected Entities**: Developed a Graph DB for interconnected entities.
 
 - **LLM Chatbot**: Built an LLM Chatbot using GPT-3 and LangChain with full front-end functionality using REACT.
+
+## Additional Platform and AI Work
+
+- **Shared ML Lifecycle Platform**: Built an internal platform adopted across four teams for model training, registry, evaluation, promotion, deployment, and monitoring. Standardized versioning, release gates, error checks, WMAPE-based evaluation, and human review.
+
+- **Human-Reviewed Document Workflow**: Built a Google ADK workflow combining report OCR, contextual questions, Snowflake tool calls, structured interpretation, and plain-language responses. Approval gates for OCR output, generated queries, table results, and PDF comparisons made each stage inspectable.
+
+- **Self-Service Sales Workflow**: Reduced a process that had required repeated engineering assistance and several days or a week to a self-service workflow completed in about one hour by 10 to 15 users across three sales teams.
+
+- **Revenue-Supporting Prediction Systems**: Designed production workflows for ACV prediction models associated with more than $8 million in annual upsell revenue, helping sales teams identify and prioritize customer opportunities.
+
+- **Evaluation and Safe Iteration**: Added golden datasets, regression evaluation, run tracing, comparison interfaces, and quality gates so teams could improve LLM and document workflows without losing visibility into behavior changes.
+
+- **Reusable Orchestration Framework**: Refactored Airflow into reusable object-oriented components, decorators, and configuration-driven templates, reducing orchestration cost by 60% and cutting new-pipeline delivery from weeks to hours.
+
+- **Mentorship and Enablement**: Mentored two junior engineers through promotions, new technical skills, and ownership of independent projects. Led recurring GPT, Snowflake, and Google ADK sessions for groups of 10 to 20 employees and recorded material for onboarding.

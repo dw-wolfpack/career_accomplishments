@@ -2,26 +2,31 @@ site_name: My Tech Career Journey
 nav:
   - Home: index.md
   - Career Journey:
-    - Autodesk:
-      - Role Descriptions - Autodesk: autodesk/role-descriptions.md
-      - Key Projects and Achievements - Autodesk: autodesk/key-projects.md
-      - Lessons Learned - Autodesk: autodesk/lessons-learned.md
-    - Glassdoor:
-      - Role Descriptions - glassdoor: glassdoor/role-descriptions.md
-      - Key Projects and Achievements - glassdoor: glassdoor/key-projects.md
-      - Lessons Learned - glassdoor: glassdoor/lessons-learned.md
-    - Disney:
-      - Role Descriptions - Disney: disney/role-descriptions.md
-      - Key Projects and Achievements - Disney: disney/key-projects.md
-      - Lessons Learned - Disney: disney/lessons-learned.md
+    - Skywalker Sound:
+      - Role Description - Skywalker Sound: skywalker-sound/role-description.md
+      - Key Projects and Achievements - Skywalker Sound: skywalker-sound/key-projects.md
+      - Lessons and Working Principles - Skywalker Sound: skywalker-sound/lessons-learned.md
     - Procore:
       - Role Descriptions - Procore: procore/role-descriptions.md
       - Key Projects and Achievements - Procore: procore/key-projects.md
       - Lessons Learned - Procore: procore/lessons-learned.md
-  - Technical Studies: chapter2.md
-  - LeetCode and Technical Interviews: chapter3.md
+    - Disney / Hulu:
+      - Role Descriptions - Disney / Hulu: disney/role-descriptions.md
+      - Key Projects and Achievements - Disney / Hulu: disney/key-projects.md
+      - Lessons Learned - Disney / Hulu: disney/lessons-learned.md
+    - Glassdoor:
+      - Role Descriptions - Glassdoor: glassdoor/role-descriptions.md
+      - Key Projects and Achievements - Glassdoor: glassdoor/key-projects.md
+      - Lessons Learned - Glassdoor: glassdoor/lessons-learned.md
+    - Autodesk:
+      - Role Descriptions - Autodesk: autodesk/role-descriptions.md
+      - Key Projects and Achievements - Autodesk: autodesk/key-projects.md
+      - Lessons Learned - Autodesk: autodesk/lessons-learned.md
+  - Independent Work:
+    - Products and Tools: independent-work/products-and-tools.md
+    - Writing and Creative Work: independent-work/writing-and-creative-work.md
+  - Beyond Engineering: beyond-engineering.md
   - Discussion Points: chapter4.md
-  - Career Advice: chapter5.md
   - Job Study and Interview Preparation: chapter6.md
   - Conclusion: chapter7.md
   - Tags:

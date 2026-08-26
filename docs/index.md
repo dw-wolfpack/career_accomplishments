@@ -1,6 +1,17 @@
 # My Tech Career Journey
 
-Welcome to my comprehensive tech career journey. This book documents my experiences, projects, and learnings from various roles, along with study materials, interview insights, and discussion points.
+Welcome to my comprehensive tech career journey. This book documents my experiences, projects, and learnings from various roles, along with study materials, interview insights, discussion points, independent products, creative work, and endurance pursuits.
+
+I am an ML platform and product engineer with more than a decade of experience building production systems for machine learning and data teams. Most of my work starts in the same place: someone has a slow, confusing, or overly manual process, and I figure out how to make it reliable enough that people can use it without an engineer standing next to them.
+
+I started in QA, moved into business systems analysis, then data engineering, software engineering, technical leadership, and Staff-level ML platform work. I have seen the full lifecycle from a lot of angles. That helps when an executive, scientist, and engineer are all describing the same problem in completely different ways. I believe platform engineering is the ultimate multiplier. Build the foundation well and a lot of people get faster, not just the person who wrote the code.
+
+## Current Focus
+
+- **ML research infrastructure at Skywalker Sound:** Building a self-service control plane across Linux, GPU, and Mac compute so applied scientists can create Ray clusters, submit jobs, diagnose failures, and monitor shared infrastructure.
+- **Reliable AI workflows:** Designing human-review gates, golden datasets, regression evaluation, structured extraction, and traceable tool use so AI-assisted systems remain inspectable and practical.
+- **Independent product building:** Creating privacy-first, local-first products such as NorthPaw and FitTrack, along with smaller browser-based utilities and experiments.
+- **Writing and creative work:** Writing and querying *FRACTURED SKY*, an adult science-fiction novel, while exploring storytelling, music, and pet-centered creative products.
 
 ## Table of Contents
 
@@ -9,60 +20,31 @@ Welcome to my comprehensive tech career journey. This book documents my experien
     - [Purpose of the Book](#purpose-of-the-book)
     - [How to Use This Book](#how-to-use-this-book)
 
-- [Career Journey](autodesk/role-descriptions.md)
-    - [Autodesk (6 years)](autodesk/role-descriptions.md)
-    - [Glassdoor (2 years)](glassdoor/role-descriptions.md)
-    - [Disney (1 year)](disney/role-descriptions.md)
-    - [Procore (2 years)](procore/role-descriptions.md)
+- Career Journey
+    - [Skywalker Sound (2026 - Present)](skywalker-sound/role-description.md)
+    - [Procore (2022 - 2026)](procore/role-descriptions.md)
+    - [Disney / Hulu (2021 - 2022)](disney/role-descriptions.md)
+    - [Glassdoor (2019 - 2021)](glassdoor/role-descriptions.md)
+    - [Autodesk (2013 - 2019)](autodesk/role-descriptions.md)
 
-- [Technical Studies](chapter2.md)
-    - [Study Techniques](chapter2.md#study-techniques)
-    - [Courses and Certifications](chapter2.md#courses-and-certifications)
-    - [Books and Resources](chapter2.md#books-and-resources)
-    - [Online Learning Platforms](chapter2.md#online-learning-platforms)
+- [Independent Work](independent-work/products-and-tools.md)
+    - [Products and Tools](independent-work/products-and-tools.md)
+    - [Writing and Creative Work](independent-work/writing-and-creative-work.md)
 
-- [LeetCode and Technical Interviews](chapter3.md)
-    - [Introduction to LeetCode](chapter3.md#introduction-to-leetcode)
-    - [Problem-Solving Strategies](chapter3.md#problem-solving-strategies)
-    - [Example Problems and Solutions](chapter3.md#example-problems-and-solutions)
-        - [Easy](chapter3.md#easy)
-        - [Medium](chapter3.md#medium)
-        - [Hard](chapter3.md#hard)
-    - [Discussion Points for Problems](chapter3.md#discussion-points-for-problems)
-    - [Interview Questions](chapter3.md#interview-questions)
-        - [Common Questions](chapter3.md#common-questions)
-        - [Company-Specific Questions](chapter3.md#company-specific-questions)
-    - [Mock Interviews](chapter3.md#mock-interviews)
-    - [Insights from Friends' Interviews](chapter3.md#insights-from-friends-interviews)
+- [Beyond Engineering](beyond-engineering.md)
 
 - [Discussion Points](chapter4.md)
-    - [Key Technical Concepts](chapter4.md#key-technical-concepts)
-    - [Challenges Faced and Solutions](chapter4.md#challenges-faced-and-solutions)
-    - [Collaboration and Teamwork](chapter4.md#collaboration-and-teamwork)
-    - [Innovation and Creativity in Projects](chapter4.md#innovation-and-creativity-in-projects)
-
-- [Career Advice](chapter5.md)
-    - [Networking Tips](chapter5.md#networking-tips)
-    - [Resume Building](chapter5.md#resume-building)
-    - [Job Search Strategies](chapter5.md#job-search-strategies)
-    - [Work-Life Balance](chapter5.md#work-life-balance)
-    - [Continuous Learning](chapter5.md#continuous-learning)
+    - [ML Platform Engineering](chapter4.md#ml-platform-engineering-as-a-multiplier)
+    - [Reliable AI Workflows](chapter4.md#reliable-ai-and-human-review)
+    - [Distributed Research Infrastructure](chapter4.md#distributed-research-infrastructure)
+    - [Leadership and Product Judgment](chapter4.md#leadership-mentorship-and-product-judgment)
 
 - [Job Study and Interview Preparation](chapter6.md)
-    - [Introduction to Modular](chapter6.md#introduction-to-modular)
-    - [Performance Infrastructure Team Responsibilities](chapter6.md#performance-infrastructure-team-responsibilities)
-    - [Relevant Experience](chapter6.md#relevant-experience)
-        - [Cloud Platforms](chapter6.md#cloud-platforms)
-        - [Infrastructure as Code (IaC)](chapter6.md#infrastructure-as-code-iac)
-        - [Linux, Docker, Kubernetes](chapter6.md#linux-docker-kubernetes)
-        - [Programming Skills](chapter6.md#programming-skills)
-        - [Security Best Practices](chapter6.md#security-best-practices)
-        - [Open Source Software](chapter6.md#open-source-software)
-    - [Soft Skills](chapter6.md#soft-skills)
-        - [Collaboration](chapter6.md#collaboration)
-        - [Communication](chapter6.md#communication)
-        - [Quality and Excellence](chapter6.md#quality-and-excellence)
-  - [Possible Recruiter Questions](chapter6.md#possible-recruiter-questions)
+    - [Career Narrative](chapter6.md#career-narrative)
+    - [The Numbers I Should Remember](chapter6.md#the-numbers-i-should-remember)
+    - [Technical Deep Dives](chapter6.md#technical-deep-dives)
+    - [Leadership and Behavioral Stories](chapter6.md#leadership-and-behavioral-stories)
+    - [Questions to Ask](chapter6.md#questions-to-ask-the-team)
 
 - [Conclusion](chapter7.md)
     - [Final Thoughts](chapter7.md#final-thoughts)
@@ -73,10 +55,10 @@ Welcome to my comprehensive tech career journey. This book documents my experien
 ## Introduction
 
 ### About the Author
-A brief bio highlighting your career and achievements.
+Chris Fiegel is a machine-learning platform engineer, product builder, and writer. He has built data and ML systems at Autodesk, Glassdoor, Disney/Hulu, Procore, and Skywalker Sound, ranging from enterprise data platforms and model-lifecycle tooling to distributed research infrastructure and human-reviewed LLM workflows. Outside his primary roles, he builds local-first consumer products, writes science fiction, and pursues endurance and adventure challenges.
 
 ### Purpose of the Book
-Explain why you wrote the book and what readers can gain.
+This site is my running record of what I have built, what worked, what did not, and what I learned along the way. Some sections are polished project summaries. Others are notes I want to keep because I know I will need the lesson again.
 
 ### How to Use This Book
-Guide readers on how to navigate and make the most out of the book.
+Use the Career Journey section for role-by-role experience, Independent Work for founder, product, and creative projects, and Beyond Engineering for the experiences that shape how I approach resilience and long-term work. The study and interview sections preserve the original notes and preparation material that helped build the journey.
