@@ -46,8 +46,8 @@ theme:
         icon: material/brightness-4
         name: Switch to dark mode
   font:
-    text: "Roboto"
-    code: "Roboto Mono"
+    text: false
+    code: false
   features:
     - navigation.tabs
     - navigation.top
@@ -73,3 +73,5 @@ plugins:
   - drawio_file
   - tags:
       tags_file: tags.md
+extra_css:
+  - stylesheets/extra.css

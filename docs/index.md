@@ -1,63 +1,151 @@
-# My Tech Career Journey
-
-Welcome to my comprehensive tech career journey. This book documents my experiences, projects, and learnings from various roles, along with study materials, interview insights, discussion points, independent products, creative work, and endurance pursuits.
-
-I am an ML platform and product engineer with more than a decade of experience building production systems for machine learning and data teams. Most of my work starts in the same place: someone has a slow, confusing, or overly manual process, and I figure out how to make it reliable enough that people can use it without an engineer standing next to them.
-
-I started in QA, moved into business systems analysis, then data engineering, software engineering, technical leadership, and Staff-level ML platform work. I have seen the full lifecycle from a lot of angles. That helps when an executive, scientist, and engineer are all describing the same problem in completely different ways. I believe platform engineering is the ultimate multiplier. Build the foundation well and a lot of people get faster, not just the person who wrote the code.
-
-## Current Focus
-
-- **ML research infrastructure at Skywalker Sound:** Building a self-service control plane across Linux, GPU, and Mac compute so applied scientists can create Ray clusters, submit jobs, diagnose failures, and monitor shared infrastructure.
-- **Reliable AI workflows:** Designing human-review gates, golden datasets, regression evaluation, structured extraction, and traceable tool use so AI-assisted systems remain inspectable and practical.
-- **Independent product building:** Creating privacy-first, local-first products such as NorthPaw and FitTrack, along with smaller browser-based utilities and experiments.
-- **Writing and creative work:** Writing and querying *FRACTURED SKY*, an adult science-fiction novel, while exploring storytelling, music, and pet-centered creative products.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-    - [About the Author](#about-the-author)
-    - [Purpose of the Book](#purpose-of-the-book)
-    - [How to Use This Book](#how-to-use-this-book)
-
-- Career Journey
-    - [Skywalker Sound (2026 - Present)](skywalker-sound/role-description.md)
-    - [Procore (2022 - 2026)](procore/role-descriptions.md)
-    - [Disney / Hulu (2021 - 2022)](disney/role-descriptions.md)
-    - [Glassdoor (2019 - 2021)](glassdoor/role-descriptions.md)
-    - [Autodesk (2013 - 2019)](autodesk/role-descriptions.md)
-
-- [Independent Work](independent-work/products-and-tools.md)
-    - [Products and Tools](independent-work/products-and-tools.md)
-    - [Writing and Creative Work](independent-work/writing-and-creative-work.md)
-
-- [Beyond Engineering](beyond-engineering.md)
-
-- [Discussion Points](chapter4.md)
-    - [ML Platform Engineering](chapter4.md#ml-platform-engineering-as-a-multiplier)
-    - [Reliable AI Workflows](chapter4.md#reliable-ai-and-human-review)
-    - [Distributed Research Infrastructure](chapter4.md#distributed-research-infrastructure)
-    - [Leadership and Product Judgment](chapter4.md#leadership-mentorship-and-product-judgment)
-
-- [Job Study and Interview Preparation](chapter6.md)
-    - [Career Narrative](chapter6.md#career-narrative)
-    - [The Numbers I Should Remember](chapter6.md#the-numbers-i-should-remember)
-    - [Technical Deep Dives](chapter6.md#technical-deep-dives)
-    - [Leadership and Behavioral Stories](chapter6.md#leadership-and-behavioral-stories)
-    - [Questions to Ask](chapter6.md#questions-to-ask-the-team)
-
-- [TL;DR](chapter7.md)
-    - [Where to Go Next](chapter7.md#where-to-go-next)
-
+---
+hide:
+  - navigation
+  - toc
 ---
 
-## Introduction
+<div class="portfolio-home">
 
-### About the Author
-Chris Fiegel is a machine-learning platform engineer, product builder, and writer. He has built data and ML systems at Autodesk, Glassdoor, Disney/Hulu, Procore, and Skywalker Sound, ranging from enterprise data platforms and model-lifecycle tooling to distributed research infrastructure and human-reviewed LLM workflows. Outside his primary roles, he builds local-first consumer products, writes science fiction, and pursues endurance and adventure challenges.
+<section class="portfolio-hero">
+  <div class="portfolio-hero__copy">
+    <p class="portfolio-kicker"><span></span> ML platform engineer · product builder · writer</p>
+    <h1>I build systems that make hard work easier to trust.</h1>
+    <p class="portfolio-lede">I build ML platforms, distributed research infrastructure, and independent products. Most of my work starts with a slow, confusing, or overly manual process and ends with something people can use without an engineer standing next to them.</p>
+    <div class="portfolio-actions">
+      <a class="portfolio-button portfolio-button--primary" href="skywalker-sound/role-description/">View career</a>
+      <a class="portfolio-button portfolio-button--secondary" href="independent-work/products-and-tools/">Explore projects</a>
+      <a class="portfolio-text-link" href="https://www.linkedin.com/in/chrisfiegel/">LinkedIn <span>↗</span></a>
+    </div>
+  </div>
+  <div class="portfolio-hero__visual" aria-label="Current areas of work">
+    <div class="signal-orbit signal-orbit--one"></div>
+    <div class="signal-orbit signal-orbit--two"></div>
+    <div class="signal-orbit signal-orbit--three"></div>
+    <div class="signal-core">
+      <span class="signal-core__label">CURRENT FOCUS</span>
+      <strong>Platforms<br>people trust</strong>
+    </div>
+    <div class="signal-node signal-node--aws"><span></span>AWS</div>
+    <div class="signal-node signal-node--gcp"><span></span>GCP</div>
+    <div class="signal-node signal-node--sagemaker"><span></span>SageMaker</div>
+    <div class="signal-node signal-node--ray"><span></span>Ray + GPU</div>
+    <div class="signal-node signal-node--registry"><span></span>Model Registry</div>
+    <div class="signal-node signal-node--data"><span></span>Spark + Airflow</div>
+    <div class="signal-node signal-node--etl"><span></span>ETL</div>
+    <div class="signal-node signal-node--eval"><span></span>Evaluation</div>
+  </div>
+</section>
 
-### Purpose of the Book
-This site is my running record of what I have built, what worked, what did not, and what I learned along the way. Some sections are polished project summaries. Others are notes I want to keep because I know I will need the lesson again.
+<section class="proof-strip" aria-label="Career highlights">
+  <div><strong>10+</strong><span>years building</span></div>
+  <div><strong>4</strong><span>teams on one ML platform</span></div>
+  <div><strong>$8M+</strong><span>revenue-associated models</span></div>
+  <div><strong>60%</strong><span>orchestration cost reduction</span></div>
+  <div><strong>8</strong><span>engineers led</span></div>
+</section>
 
-### How to Use This Book
-Use the Career Journey section for role-by-role experience, Independent Work for founder, product, and creative projects, and Beyond Engineering for the experiences that shape how I approach resilience and long-term work. The study and interview sections preserve the original notes and preparation material that helped build the journey.
+<section class="portfolio-section">
+  <div class="portfolio-section__heading">
+    <div><p class="section-eyebrow">NOW</p><h2>What I am building</h2></div>
+    <p>One foot in research infrastructure. The other in learning what happens when your own users build the backlog with you.</p>
+  </div>
+  <div class="current-grid">
+    <a class="feature-card feature-card--skywalker" href="skywalker-sound/key-projects/">
+      <div class="feature-card__top"><span class="feature-index">01</span><span class="feature-arrow">↗</span></div>
+      <p class="feature-label">SKYWALKER SOUND</p>
+      <h3>Distributed compute for applied research</h3>
+      <p>A self-service Ray control plane across Linux, GPU, and Mac compute, with the history, logs, health, and recovery tools researchers need when experiments get messy.</p>
+      <div class="feature-tags"><span>Ray</span><span>FastAPI</span><span>PostgreSQL</span><span>Grafana</span></div>
+    </a>
+    <a class="feature-card feature-card--northpaw" href="independent-work/products-and-tools/#northpaw">
+      <div class="feature-card__top"><span class="feature-index">02</span><span class="feature-arrow">↗</span></div>
+      <p class="feature-label">NORTHPAW</p>
+      <h3>Dog safety without the black box</h3>
+      <p>A privacy-first iOS app that turns weather, pavement conditions, and an individual dog profile into deterministic outdoor guidance.</p>
+      <div class="feature-tags"><span>React Native</span><span>iOS</span><span>Local-first</span><span>Founder</span></div>
+    </a>
+  </div>
+</section>
+
+<section class="portfolio-section">
+  <div class="portfolio-section__heading portfolio-section__heading--compact">
+    <div><p class="section-eyebrow">SELECTED WORK</p><h2>Built for real use</h2></div>
+    <a class="portfolio-text-link" href="chapter7/">Read the TL;DR <span>→</span></a>
+  </div>
+  <div class="work-grid">
+    <a class="work-card" href="procore/key-projects/#additional-platform-and-ai-work">
+      <span class="work-card__number">01</span>
+      <p class="work-card__meta">ML PLATFORM · PROCORE</p>
+      <h3>One lifecycle, four teams</h3>
+      <p>Training, registry, evaluation, human review, promotion, deployment, and monitoring through one shared platform.</p>
+      <strong class="work-card__result">4 teams adopted</strong>
+    </a>
+    <a class="work-card" href="procore/key-projects/#additional-platform-and-ai-work">
+      <span class="work-card__number">02</span>
+      <p class="work-card__meta">RELIABLE AI · PROCORE</p>
+      <h3>From a week to an hour</h3>
+      <p>OCR, Snowflake tool calls, structured interpretation, and review gates that showed users how the system reached each result.</p>
+      <strong class="work-card__result">10 to 15 users · 3 teams</strong>
+    </a>
+    <a class="work-card" href="independent-work/products-and-tools/#fittrack">
+      <span class="work-card__number">03</span>
+      <p class="work-card__meta">LOCAL-FIRST iOS · FITTRACK</p>
+      <h3>The plan after life happens</h3>
+      <p>Turns AI-generated training text into a day-by-day system that can survive missed workouts, fatigue, and schedule changes.</p>
+      <strong class="work-card__result">No account · no backend</strong>
+    </a>
+    <a class="work-card" href="independent-work/writing-and-creative-work/#fractured-sky">
+      <span class="work-card__number">04</span>
+      <p class="work-card__meta">SCIENCE FICTION · FRACTURED SKY</p>
+      <h3>Six weeks to draft. Years to finish.</h3>
+      <p>An adult science-fiction novel and the first book in a planned trilogy, now in the query process.</p>
+      <strong class="work-card__result">Writing · revision · persistence</strong>
+    </a>
+  </div>
+</section>
+
+<section class="portfolio-section career-section">
+  <div class="portfolio-section__heading portfolio-section__heading--compact">
+    <div><p class="section-eyebrow">CAREER</p><h2>Built from the whole lifecycle</h2></div>
+    <p>QA to business systems to data engineering to ML platforms and research infrastructure.</p>
+  </div>
+  <div class="career-line">
+    <a class="career-stop career-stop--active" href="skywalker-sound/role-description/"><span class="career-dot"></span><span class="career-years">2026 · NOW</span><strong>Skywalker Sound</strong><small>Research infrastructure</small></a>
+    <a class="career-stop" href="procore/role-descriptions/"><span class="career-dot"></span><span class="career-years">2022 · 2026</span><strong>Procore</strong><small>Staff ML platform</small></a>
+    <a class="career-stop" href="disney/role-descriptions/"><span class="career-dot"></span><span class="career-years">2021 · 2022</span><strong>Disney / Hulu</strong><small>Lead data engineer</small></a>
+    <a class="career-stop" href="glassdoor/role-descriptions/"><span class="career-dot"></span><span class="career-years">2019 · 2021</span><strong>Glassdoor</strong><small>Big data engineering</small></a>
+    <a class="career-stop" href="autodesk/role-descriptions/"><span class="career-dot"></span><span class="career-years">2013 · 2019</span><strong>Autodesk</strong><small>QA to senior data engineer</small></a>
+  </div>
+</section>
+
+<section class="portfolio-section personal-section">
+  <div class="personal-copy">
+    <p class="section-eyebrow">BEYOND THE JOB TITLE</p>
+    <h2>The other parts are not really separate.</h2>
+    <p>I worked at a veterinary hospital through high school and college. I have finished Ironman Lake Tahoe, Escape from Alcatraz, an ultramarathon, and more than 12 marathons. I write science fiction and occasionally sign up for things that scare me a little.</p>
+    <p>Those threads show up in how I build: prepare carefully, listen when reality disagrees with the plan, and keep going after the first burst of excitement wears off.</p>
+    <a class="portfolio-button portfolio-button--secondary" href="beyond-engineering/">Beyond engineering</a>
+  </div>
+  <div class="personal-marks" aria-hidden="true">
+    <span>140.6</span>
+    <span>12+</span>
+    <span>3×</span>
+    <small>IRONMAN · MARATHONS · SKYDIVES</small>
+  </div>
+</section>
+
+<section class="explore-section">
+  <p class="section-eyebrow">GO DEEPER</p>
+  <div class="explore-grid">
+    <a href="chapter4/"><span>How I think</span><strong>Discussion Points</strong><em>→</em></a>
+    <a href="chapter6/"><span>Evidence and stories</span><strong>Interview Preparation</strong><em>→</em></a>
+    <a href="tags/"><span>Browse by subject</span><strong>127 Topics</strong><em>→</em></a>
+  </div>
+</section>
+
+<footer class="portfolio-footer-note">
+  <p>This site is my running record of what I have built, what worked, what did not, and what I learned along the way.</p>
+  <a href="https://github.com/fiegellan">GitHub ↗</a>
+</footer>
+
+</div>
