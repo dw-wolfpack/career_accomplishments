@@ -46,9 +46,8 @@ I started in QA, moved into business systems analysis, then data engineering, so
     - [Leadership and Behavioral Stories](chapter6.md#leadership-and-behavioral-stories)
     - [Questions to Ask](chapter6.md#questions-to-ask-the-team)
 
-- [Conclusion](chapter7.md)
-    - [Final Thoughts](chapter7.md#final-thoughts)
-    - [Future Directions](chapter7.md#future-directions)
+- [TL;DR](chapter7.md)
+    - [Where to Go Next](chapter7.md#where-to-go-next)
 
 ---
 

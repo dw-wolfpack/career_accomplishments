@@ -11,7 +11,10 @@ tags:
   - salesforce
   - marketing
   - ai
-  - ml 
+  - machine learning
+  - aws
+  - data engineering
+  - cost optimization
 ---
 
 ## Key Projects and Achievements <a id="autodesk-key-projects"></a>

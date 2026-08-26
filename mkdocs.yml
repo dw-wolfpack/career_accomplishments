@@ -1,4 +1,4 @@
-site_name: My Tech Career Journey
+site_name: Chris Fiegel
 nav:
   - Home: index.md
   - Career Journey:
@@ -28,10 +28,8 @@ nav:
   - Beyond Engineering: beyond-engineering.md
   - Discussion Points: chapter4.md
   - Job Study and Interview Preparation: chapter6.md
-  - Conclusion: chapter7.md
-  - Tags:
-    - Hive: tags/hive.md
-    - Microservices: tags/microservices.md
+  - TL;DR: chapter7.md
+  - Tags: tags.md
 theme:
   name: material
   palette:

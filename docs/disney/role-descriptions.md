@@ -1,12 +1,13 @@
 ---
 tags:
-  - data engineer
+  - data engineering
   - data science
-  - databrick
+  - databricks
   - datorama
-  - people managing
-  - team lead
-  - weekly reports
+  - people management
+  - leadership
+  - stakeholder communication
+  - marketing analytics
 ---
 
 ## Role Descriptions <a id="disney-role-descriptions"></a>

@@ -1,3 +1,17 @@
+---
+tags:
+  - ml platform
+  - platform engineering
+  - reliable ai
+  - evaluation
+  - human review
+  - distributed systems
+  - ray
+  - data quality
+  - leadership
+  - product judgment
+---
+
 # Discussion Points
 
 These are the ideas I keep coming back to across ML platforms, data systems, research infrastructure, leadership, and my own products. They are not universal rules. They are what years of building and occasionally getting things wrong have taught me so far.

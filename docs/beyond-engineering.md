@@ -4,6 +4,11 @@ tags:
   - fitness
   - resilience
   - leadership
+  - ironman
+  - triathlon
+  - marathon
+  - veterinary experience
+  - adventure
 ---
 
 # Beyond Engineering

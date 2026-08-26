@@ -1,8 +1,10 @@
 ---
 tags:
   - mlops
-  - platform engineer
-  - architect
+  - platform engineering
+  - architecture
+  - staff engineering
+  - technical leadership
 ---
 
 ## Role Descriptions <a id="procore-role-descriptions"></a>

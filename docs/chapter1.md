@@ -1,11 +1,3 @@
----
-tags:
-  - HTML5
-  - JavaScript
-  - CSS
-  - SPARK
----
-
 # Career Journey
 
 ## Autodesk (6 years) <a id="autodesk-6-years"></a>

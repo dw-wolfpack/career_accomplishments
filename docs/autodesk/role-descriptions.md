@@ -2,9 +2,11 @@
 tags:
   - qa
   - bsa
-  - data engineer
+  - data engineering
   - soccer
-  - team lead
+  - leadership
+  - business systems analysis
+  - software engineering
 ---
 
 - **QA Analyst (Sep 2013 - Dec 2013)**: Initially hired out of college as a QA contractor. Worked with Salesforce, Aprimo, and Informatica. Introduced to Scrum/Agile methodology. Worked directly with the development team to validate code deployment and enhancements for our lead generation team. Worked with the business to validate expected outcomes and created test plans and documentation.

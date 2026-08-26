@@ -5,6 +5,10 @@ tags:
   - airflow
   - data science
   - singer.io
+  - api ingestion
+  - anomaly detection
+  - flask
+  - postgres
 ---
 
 ## Key Projects and Achievements <a id="glassdoor-key-projects"></a>

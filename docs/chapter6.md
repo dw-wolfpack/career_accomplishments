@@ -1,3 +1,17 @@
+---
+tags:
+  - interview preparation
+  - ml platform
+  - mlops
+  - platform engineering
+  - distributed systems
+  - reliable ai
+  - evaluation
+  - leadership
+  - mentorship
+  - career narrative
+---
+
 # Job Study and Interview Preparation
 
 This is the interview-prep page I wish I had years ago. It keeps the real examples, numbers, and questions in one place so I do not walk into an interview and suddenly forget half the things I have built. The goal is not to force every metric into every answer. It is to pick the example that actually fits the question.

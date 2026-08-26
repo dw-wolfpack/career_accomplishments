@@ -1,11 +1,13 @@
 ---
 tags:
-  - managing
-  - tech lead
+  - leadership
+  - technical leadership
   - interviewing
-  - dim modeling
+  - dimensional modeling
   - snowflake
-  - databrick
+  - databricks
+  - mentorship
+  - remote collaboration
 ---
 
 ## Lessons Learned <a id="disney-lessons"></a>
@@ -23,4 +25,3 @@ tags:
 - **Collaboration with Data Science**: Worked closely with data science teams on ML models and visualization layers.
 
 - **Marketing and Ad Revenue**: Learned about Disney's approach to GTM and ad revenue, enhancing understanding of marketing strategies and their impact.
-

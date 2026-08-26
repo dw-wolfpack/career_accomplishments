@@ -2,7 +2,7 @@
 tags:
   - model registry
   - local development
-  - api 
+  - api
   - data quality
   - sagemaker
   - terraform
@@ -11,7 +11,8 @@ tags:
   - github actions
   - pandas
   - dask
-  - aws eks
+  - aws
+  - eks
   - airflow
   - sam
   - cloudformation
@@ -21,6 +22,14 @@ tags:
   - gpt-3
   - react
   - flask
+  - ml platform
+  - mlops
+  - google adk
+  - evaluation
+  - human review
+  - snowflake
+  - kubernetes
+  - mentorship
 ---
 
 ## Key Projects and Achievements <a id="procore-key-projects"></a>

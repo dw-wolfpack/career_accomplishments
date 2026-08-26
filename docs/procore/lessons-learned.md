@@ -1,12 +1,14 @@
 ---
 tags:
-  - team lead
-  - architecture 
+  - leadership
+  - architecture
   - modeling at scale
   - sagemaker
   - terraform
   - github actions
   - gitlab
+  - mentorship
+  - ml platform
 ---
 
 ## Lessons Learned <a id="procore-lessons"></a>
@@ -24,4 +26,3 @@ tags:
 - **Data Quality and Integrity**: Developed a comprehensive Data Quality Framework and implemented best practices for maintaining data quality.
 
 - **Collaboration and Team Management**: Gained experience in leading a team, collaborating with stakeholders, and managing technical initiatives.
-

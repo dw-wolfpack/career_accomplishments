@@ -1,12 +1,14 @@
 ---
 tags:
-  - dim modeling
-  - gtm
-  - mmm
+  - dimensional modeling
+  - go-to-market
+  - marketing mix modeling
   - databricks
   - snowflake
   - airflow
   - aws
+  - data privacy
+  - marketing analytics
 ---
 
 ## Key Projects and Achievements <a id="disney-key-projects"></a>
@@ -20,4 +22,3 @@ tags:
 - **Data Privacy Solutions**: Collaborated with legal teams to design data privacy solutions that met legal requirements and supported data science and analytics needs.
 
 - **Anomaly Detection Application**: Contributed to the development of an internal anomaly detection application.
-

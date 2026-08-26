@@ -1,9 +1,11 @@
 ---
 tags:
-  - data engineer
+  - data engineering
   - data quality
   - data catalog
   - on call
+  - software engineering
+  - api ingestion
 ---
 
 ## Role Descriptions <a id="glassdoor-role-descriptions"></a>

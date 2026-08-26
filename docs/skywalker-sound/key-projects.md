@@ -8,6 +8,13 @@ tags:
   - audio metadata
   - panns
   - llm
+  - ml platform
+  - distributed systems
+  - research infrastructure
+  - python
+  - gcp
+  - gitlab
+  - observability
 ---
 
 # Key Projects and Achievements
