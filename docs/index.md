@@ -156,7 +156,7 @@ hide:
 
 <footer class="portfolio-footer-note">
   <p>This site is my running record of what I have built, what worked, what did not, and what I learned along the way.</p>
-  <a href="https://github.com/fiegellan">GitHub ↗</a>
+  <a href="https://github.com/dw-wolfpack">GitHub ↗</a>
 </footer>
 
 </div>
