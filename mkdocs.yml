@@ -74,6 +74,6 @@ plugins:
   - tags:
       tags_file: tags.md
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra.css?v=20260827
 extra_javascript:
-  - javascripts/personal-universe.js
+  - javascripts/personal-universe.js?v=20260827
