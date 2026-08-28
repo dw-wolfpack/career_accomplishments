@@ -75,3 +75,5 @@ plugins:
       tags_file: tags.md
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/personal-universe.js

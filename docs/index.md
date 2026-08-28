@@ -17,23 +17,34 @@ hide:
       <a class="portfolio-text-link" href="https://www.linkedin.com/in/chrisfiegel/">LinkedIn <span>↗</span></a>
     </div>
   </div>
-  <div class="portfolio-hero__visual" aria-label="Current areas of work">
-    <div class="signal-orbit signal-orbit--one"></div>
-    <div class="signal-orbit signal-orbit--two"></div>
-    <div class="signal-orbit signal-orbit--three"></div>
-    <div class="signal-core">
-      <span class="signal-core__label">CURRENT FOCUS</span>
-      <strong>Platforms<br>people trust</strong>
+  <nav class="portfolio-hero__visual personal-universe" data-personal-universe aria-label="Explore Chris's technical skills and life outside engineering">
+    <div class="universe-stars universe-stars--far" data-universe-depth="0.15" aria-hidden="true"></div>
+    <div class="universe-stars universe-stars--near" data-universe-depth="0.35" aria-hidden="true"></div>
+    <div class="universe-glow" data-universe-depth="0.1" aria-hidden="true"></div>
+    <div class="universe-orbits" data-universe-depth="0.25" aria-hidden="true">
+      <span class="universe-orbit universe-orbit--inner"></span>
+      <span class="universe-orbit universe-orbit--middle"></span>
+      <span class="universe-orbit universe-orbit--outer"></span>
     </div>
-    <div class="signal-node signal-node--aws"><span></span>AWS</div>
-    <div class="signal-node signal-node--gcp"><span></span>GCP</div>
-    <div class="signal-node signal-node--sagemaker"><span></span>SageMaker</div>
-    <div class="signal-node signal-node--ray"><span></span>Ray + GPU</div>
-    <div class="signal-node signal-node--registry"><span></span>Model Registry</div>
-    <div class="signal-node signal-node--data"><span></span>Spark + Airflow</div>
-    <div class="signal-node signal-node--etl"><span></span>ETL</div>
-    <div class="signal-node signal-node--eval"><span></span>Evaluation</div>
-  </div>
+    <div class="universe-core" data-universe-depth="0.5">
+      <span>CHRIS</span>
+      <strong>A life built<br>with intention</strong>
+    </div>
+    <a class="universe-node universe-node--aws universe-node--outer" href="procore/key-projects/#procore-key-projects"><span class="universe-node__body"><i></i><b>AWS</b></span></a>
+    <a class="universe-node universe-node--gcp universe-node--middle" href="skywalker-sound/role-description/"><span class="universe-node__body"><i></i><b>GCP</b></span></a>
+    <a class="universe-node universe-node--sagemaker universe-node--outer" href="procore/key-projects/#procore-key-projects"><span class="universe-node__body"><i></i><b>SageMaker</b></span></a>
+    <a class="universe-node universe-node--ray universe-node--middle" href="skywalker-sound/key-projects/"><span class="universe-node__body"><i></i><b>Ray + GPU</b></span></a>
+    <a class="universe-node universe-node--registry universe-node--outer" href="procore/key-projects/#procore-key-projects"><span class="universe-node__body"><i></i><b>Model Registry</b></span></a>
+    <a class="universe-node universe-node--data universe-node--middle" href="glassdoor/key-projects/#glassdoor-key-projects"><span class="universe-node__body"><i></i><b>Spark + Airflow</b></span></a>
+    <a class="universe-node universe-node--etl universe-node--outer" href="autodesk/key-projects/#autodesk-key-projects"><span class="universe-node__body"><i></i><b>ETL</b></span></a>
+    <a class="universe-node universe-node--evaluation universe-node--middle" href="procore/key-projects/#additional-platform-and-ai-work"><span class="universe-node__body"><i></i><b>Evaluation</b></span></a>
+    <a class="universe-node universe-node--product universe-node--personal" href="independent-work/products-and-tools/"><span class="universe-node__body"><i></i><b>Product Builder</b></span></a>
+    <a class="universe-node universe-node--writer universe-node--personal" href="independent-work/writing-and-creative-work/#fractured-sky"><span class="universe-node__body"><i></i><b>Writer</b></span></a>
+    <a class="universe-node universe-node--endurance universe-node--personal" href="beyond-engineering/"><span class="universe-node__body"><i></i><b>Endurance</b></span></a>
+    <a class="universe-node universe-node--dogs universe-node--personal" href="independent-work/products-and-tools/#northpaw"><span class="universe-node__body"><i></i><b>Dogs</b></span></a>
+    <a class="universe-node universe-node--music universe-node--personal" href="independent-work/writing-and-creative-work/#music-and-storytelling-experiments"><span class="universe-node__body"><i></i><b>Music</b></span></a>
+    <a class="universe-node universe-node--adventure universe-node--personal" href="beyond-engineering/"><span class="universe-node__body"><i></i><b>Adventure</b></span></a>
+  </nav>
 </section>
 
 <section class="proof-strip" aria-label="Career highlights">
