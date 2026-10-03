@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {% set share_image = config.site_url ~ "images/share-card.jpg" if config.site_url else "images/share-card.jpg" %}
+  {% set share_title = "Chris Fiegel — ML Infrastructure" %}
+  {% set share_description = "I build systems that make hard work easier to trust." %}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chris Fiegel">
+  <meta property="og:title" content="{{ share_title }}">
+  <meta property="og:description" content="{{ share_description }}">
+  {% if config.site_url %}
+    <meta property="og:url" content="{{ config.site_url }}">
+  {% endif %}
+  <meta property="og:image" content="{{ share_image }}">
+  <meta property="og:image:alt" content="Chris Fiegel. I build systems that make hard work easier to trust.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ share_title }}">
+  <meta name="twitter:description" content="{{ share_description }}">
+  <meta name="twitter:image" content="{{ share_image }}">
+  <link rel="icon" href="{{ 'images/cf-mark.png' | url }}" type="image/png">
+  <link rel="apple-touch-icon" href="{{ 'images/cf-mark.png' | url }}">
+{% endblock %}

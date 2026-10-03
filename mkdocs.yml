@@ -1,6 +1,9 @@
 site_name: Chris Fiegel
+site_url: https://dw-wolfpack.github.io/career_accomplishments/
+site_description: ML infrastructure, distributed systems, and AI. I build systems that make hard work easier to trust.
 nav:
   - Home: index.md
+  - Diagram Studies: diagram-studies.md
   - Career Journey:
     - Skywalker Sound:
       - Role Description - Skywalker Sound: skywalker-sound/role-description.md
@@ -32,6 +35,7 @@ nav:
   - Tags: tags.md
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: slate
       primary: deep purple
@@ -52,7 +56,7 @@ theme:
     - navigation.tabs
     - navigation.top
     - toc.integrate
-  favicon: 'images/dwpicon.png'
+  favicon: images/cf-mark.png
   language: en
   search:
     lang: en
@@ -74,6 +78,6 @@ plugins:
   - tags:
       tags_file: tags.md
 extra_css:
-  - stylesheets/extra.css?v=20260827
+  - stylesheets/extra.css?v=20261003g
 extra_javascript:
-  - javascripts/personal-universe.js?v=20260827
+  - javascripts/personal-universe.js?v=20261003
