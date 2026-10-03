@@ -19,6 +19,8 @@ tags:
 
 # Key Projects and Achievements
 
+<a class="see-system" href="../../diagram-studies/#ml-hub"><span>See the system</span><strong>ML Hub · Ray topology · before and after</strong><em>→</em></a>
+
 - **Self-Service ML Hub**: Designed and built a control plane spanning Linux, GPU, and Mac compute. Researchers can create and manage Ray clusters, submit jobs, inspect history, diagnose failures, and monitor infrastructure without handling each machine's setup directly.
 
 - **Platform Control Plane**: Built FastAPI, PostgreSQL, and web services for cluster creation, node enrollment, software upgrades, resource pools, job history, system health, logs, and operational controls.

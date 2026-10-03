@@ -8,20 +8,40 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
 <div class="portfolio-home">
 
 <section class="portfolio-hero">
-  <p class="hero-name">Chris Fiegel</p>
-  <p class="hero-disciplines">ML Infrastructure · Distributed Systems · AI</p>
-  <h1>I build systems that make hard work easier to trust.</h1>
-  <p class="portfolio-lede">Distributed research infrastructure at Skywalker Sound. Previously Staff ML at Procore. I build platforms that turn complicated ML workflows into systems researchers and engineers can actually use.</p>
-  <div class="portfolio-actions">
-    <a class="portfolio-button portfolio-button--primary" href="skywalker-sound/key-projects/">Skywalker Sound</a>
-    <a class="portfolio-button portfolio-button--secondary" href="procore/key-projects/">Procore</a>
-    <a class="portfolio-text-link" href="https://www.linkedin.com/in/chrisfiegel/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+  <div class="portfolio-hero__copy">
+    <p class="hero-name">Chris Fiegel</p>
+    <p class="hero-disciplines">ML Infrastructure · Distributed Systems · AI</p>
+    <h1>I build systems that make hard work easier to trust.</h1>
+    <p class="portfolio-lede">Distributed research infrastructure at Skywalker Sound. Previously Staff ML at Procore. I build platforms that turn complicated ML workflows into systems researchers and engineers can actually use.</p>
+    <div class="portfolio-actions">
+      <a class="portfolio-button portfolio-button--primary" href="diagram-studies/#ml-hub">See the ML Hub</a>
+      <a class="portfolio-button portfolio-button--secondary" href="diagram-studies/">Diagram Studies</a>
+      <a class="portfolio-text-link" href="https://www.linkedin.com/in/chrisfiegel/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+    </div>
   </div>
+  <a class="hero-hub" href="diagram-studies/#ml-hub" aria-label="Open the ML Hub study">
+    <div class="hero-hub__bar">
+      <span class="hero-hub__live"></span>
+      <b>ML Hub</b>
+      <small>Skywalker Sound</small>
+    </div>
+    <ul class="hero-hub__rows">
+      <li><strong>audio-train</strong><small>8 × A100</small><i style="--v:82%"></i></li>
+      <li><strong>metadata-etl</strong><small>192 CPU</small><i style="--v:58%"></i></li>
+      <li><strong>search-index</strong><small>128 CPU</small><i style="--v:34%"></i></li>
+      <li class="is-warn"><strong>mac-batch</strong><small>1 recovering</small><i style="--v:71%"></i></li>
+      <li><strong>eval-sweep</strong><small>3 × A100</small><i style="--v:12%"></i></li>
+    </ul>
+    <div class="hero-hub__foot">
+      <span>GCP</span><span>AWS</span><span>On-prem A100</span><span>Mac Studio</span>
+      <em>Open →</em>
+    </div>
+  </a>
 </section>
 
 <section class="impact-metrics" aria-label="Impact">
-  <div><strong class="is-word">Hybrid</strong><span>GCP, AWS, on-prem A100s, Mac Studios</span></div>
-  <div><strong>4</strong><span>research scientists, one MLE</span></div>
+  <div><strong>~40</strong><span>machines across GCP, AWS, on-prem A100s, and Mac Studios</span></div>
+  <div><strong>5</strong><span>Ray clusters, one control plane</span></div>
   <div><strong>$8M+</strong><span>revenue-associated models</span></div>
   <div><strong>60%</strong><span>orchestration cost reduction</span></div>
 </section>
@@ -30,7 +50,7 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
   <p>Most of my work starts with a slow, confusing, or overly manual process and ends with something people can use without an engineer standing next to them.</p>
 </section>
 
-<a class="case case--skywalker" href="skywalker-sound/key-projects/">
+<a class="case case--skywalker" href="diagram-studies/#ml-hub">
   <div class="case__copy">
     <p class="section-eyebrow">Now</p>
     <h2>Skywalker Sound</h2>
@@ -74,7 +94,7 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
   </div>
 </a>
 
-<a class="case case--procore" href="procore/key-projects/#additional-platform-and-ai-work">
+<a class="case case--procore" href="diagram-studies/#lifecycle-gate">
   <div class="case__copy">
     <p class="section-eyebrow">Previously</p>
     <h2>Procore</h2>
@@ -94,25 +114,6 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
     <li>Monitor</li>
   </ol>
 </a>
-
-<section class="system-map" aria-label="The pattern across the work">
-  <div class="system-map__state">
-    <span>Slow</span>
-    <span>Confusing</span>
-    <span>Manual</span>
-  </div>
-  <div class="system-map__bridge" aria-hidden="true"></div>
-  <div class="system-map__platform">
-    <small>Platform</small>
-    <strong>People can use it</strong>
-    <div>
-      <a href="skywalker-sound/key-projects/">Skywalker</a>
-      <a href="procore/key-projects/">Procore</a>
-    </div>
-  </div>
-  <div class="system-map__bridge" aria-hidden="true"></div>
-  <p class="system-map__outcome">No engineer standing next to them</p>
-</section>
 
 <section class="independent-band">
   <p class="section-eyebrow">Independent</p>
@@ -192,7 +193,6 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
   <div class="explore-grid">
     <a href="diagram-studies/"><span>Visual artifacts</span><strong>Diagram Studies</strong><em>→</em></a>
     <a href="chapter4/"><span>How I think</span><strong>Discussion Points</strong><em>→</em></a>
-    <a href="chapter6/"><span>Evidence and stories</span><strong>Interview Preparation</strong><em>→</em></a>
     <a href="tags/"><span>Browse by subject</span><strong>127 Topics</strong><em>→</em></a>
   </div>
 </section>

@@ -34,6 +34,8 @@ tags:
 
 ## Key Projects and Achievements <a id="procore-key-projects"></a>
 
+<a class="see-system" href="../../diagram-studies/#lifecycle-gate"><span>See the system</span><strong>Lifecycle gate · OOP swap · before and after</strong><em>→</em></a>
+
 - **Data Science Workflow**: Designed and developed a cloud-based Data Science workflow using AWS SageMaker, Terraform, DVC, and GitHub, reducing deployment time from 4 weeks to 1 week.
 
 - **AWS Model Registry**: Developed the AWS Model Registry for the data science team, improving model deployment efficiency by 85%.

@@ -154,6 +154,7 @@ hide:
       <div class="gate__model"><b>Model</b><small class="gate__why gate__why--hold">Held for human review</small><small class="gate__why gate__why--pass">Review passed</small></div>
     </div>
   </div>
+  <p class="studies__more"><a href="../procore/key-projects/#additional-platform-and-ai-work">Procore project notes →</a></p>
 </section>
 
 <section class="study" id="oop-swap">
@@ -310,6 +311,7 @@ hide:
       </div>
     </div>
   </div>
+  <p class="studies__more"><a href="../skywalker-sound/key-projects/">Skywalker project notes →</a></p>
 </section>
 
 <section class="study" id="data-trust">
@@ -344,6 +346,7 @@ hide:
       <p>People can see why the number or the model changed.</p>
     </div>
   </div>
+  <p class="studies__more"><a href="../glassdoor/key-projects/">Glassdoor project notes →</a> · <a href="../autodesk/key-projects/">Autodesk project notes →</a></p>
 </section>
 
 <p class="studies__foot"><a href="./">Back to the homepage</a></p>

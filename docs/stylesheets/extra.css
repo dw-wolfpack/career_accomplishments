@@ -162,9 +162,125 @@ pre {
 }
 
 .portfolio-hero {
-  max-width: 68rem;
+  align-items: center;
+  display: grid;
+  gap: clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(0, 1.3fr) minmax(19rem, 0.8fr);
   min-height: auto;
-  padding: clamp(4.5rem, 12vw, 9rem) 0 clamp(3.5rem, 7vw, 5.5rem);
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.portfolio-hero__copy { min-width: 0; }
+
+.hero-hub {
+  background:
+    radial-gradient(circle at 85% 0%, rgba(45, 212, 191, 0.18), transparent 14rem),
+    #080e1e;
+  border: 1px solid rgba(248, 250, 252, 0.1);
+  border-radius: 1.4rem;
+  box-shadow: 0 30px 80px rgba(2, 6, 23, 0.35);
+  color: #f8fafc !important;
+  display: block;
+  padding: 1.1rem 1.2rem 1rem;
+  text-decoration: none;
+  transition: transform 220ms ease, border-color 220ms ease;
+}
+
+.hero-hub:visited { color: #f8fafc !important; }
+.hero-hub:hover { border-color: rgba(45, 212, 191, 0.45); transform: translateY(-4px); }
+
+.hero-hub__bar {
+  align-items: center;
+  border-bottom: 1px solid rgba(248, 250, 252, 0.1);
+  display: flex;
+  gap: 0.55rem;
+  padding-bottom: 0.8rem;
+}
+
+.hero-hub__live {
+  animation: hub-pulse 2.4s ease-in-out infinite;
+  background: #2dd4bf;
+  border-radius: 999px;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.hero-hub__bar b { font-size: 0.95rem; letter-spacing: -0.02em; }
+.hero-hub__bar small { color: #94a3b8; font-size: 0.68rem; margin-left: auto; }
+
+.md-typeset ul.hero-hub__rows {
+  display: grid;
+  gap: 0.15rem;
+  list-style: none;
+  margin: 0.6rem 0;
+  padding: 0;
+}
+
+.md-typeset .hero-hub__rows li {
+  align-items: center;
+  border-radius: 0.6rem;
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: 1fr auto 4.5rem;
+  margin: 0;
+  padding: 0.5rem 0.4rem;
+}
+
+.hero-hub__rows strong { font-size: 0.82rem; font-weight: 680; }
+.hero-hub__rows small { color: #94a3b8; font-size: 0.68rem; }
+
+.hero-hub__rows i {
+  background: rgba(248, 250, 252, 0.12);
+  border-radius: 999px;
+  display: block;
+  height: 0.35rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-hub__rows i::after {
+  background: linear-gradient(90deg, #0f766e, #2dd4bf);
+  border-radius: 999px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: var(--v, 0%);
+}
+
+.hero-hub__rows li.is-warn small { color: #fbbf24; }
+.hero-hub__rows li.is-warn i::after { background: linear-gradient(90deg, #b45309, #fbbf24); }
+
+.hero-hub__foot {
+  align-items: center;
+  border-top: 1px solid rgba(248, 250, 252, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding-top: 0.8rem;
+}
+
+.hero-hub__foot span {
+  border: 1px solid rgba(248, 250, 252, 0.16);
+  border-radius: 999px;
+  color: #cbd5e1;
+  font-size: 0.62rem;
+  font-weight: 650;
+  padding: 0.22rem 0.55rem;
+}
+
+.hero-hub__foot em {
+  color: #5eead4;
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+@keyframes hub-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.5); }
+  50% { box-shadow: 0 0 0 6px rgba(45, 212, 191, 0); }
 }
 
 .hero-name {
@@ -214,7 +330,7 @@ pre {
 }
 
 .portfolio-hero h1 {
-  font-size: clamp(3.15rem, 7.2vw, 7.4rem);
+  font-size: clamp(3rem, 5.6vw, 6.2rem);
   font-weight: 760;
   letter-spacing: -0.072em;
   line-height: 0.9;
@@ -1019,7 +1135,7 @@ pre {
 }
 
 .explore-section .section-eyebrow { color: var(--cf-teal-bright); }
-.explore-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 1.3rem; }
+.explore-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 1.3rem; }
 .explore-grid a { border-top: 1px solid color-mix(in srgb, var(--cf-paper) 20%, transparent); color: var(--cf-paper) !important; display: grid; grid-template-columns: 1fr auto; padding: 1.2rem 1.2rem 1.2rem 0; text-decoration: none; }
 .explore-grid a:visited { color: var(--cf-paper) !important; }
 .explore-grid a + a { padding-left: 1.2rem; }
@@ -1048,18 +1164,19 @@ pre {
 }
 
 @media screen and (max-width: 64em) {
+  .portfolio-hero { grid-template-columns: 1fr; }
+  .hero-hub { max-width: 32rem; }
   .case,
   .system-map { grid-template-columns: 1fr; }
   .impact-metrics { grid-template-columns: 1fr 1fr; }
   .system-map__bridge { height: 2rem; min-width: 1px; width: 1px; justify-self: center; background: linear-gradient(transparent, var(--cf-teal), transparent); }
   .independent-row { grid-template-columns: 1fr; }
   .independent-row a + a { padding-left: 0; }
-  .explore-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media screen and (max-width: 48em) {
   .portfolio-home { padding-top: 0; }
-  .portfolio-hero { padding-top: 3.2rem; }
+  .portfolio-hero { padding-top: 2rem; }
   .portfolio-hero__visual { margin: 0 auto; max-width: 30rem; width: 96%; }
   .universe-node__body b { font-size: 0.58rem; }
   .personal-section,
@@ -1099,6 +1216,7 @@ pre {
   .universe-core,
   .universe-node,
   .universe-node__body { animation: none !important; }
+  .hero-hub__live,
   .topo__token,
   .topo__track::before,
   .gate__model,
@@ -1476,6 +1594,30 @@ pre {
 #gate-hold:checked ~ .gate__track li:nth-child(5),
 #gate-hold:checked ~ .gate__track li:nth-child(6) { opacity: 0.45; }
 
+.md-typeset a.see-system {
+  align-items: center;
+  background:
+    radial-gradient(circle at 90% 0%, rgba(45, 212, 191, 0.16), transparent 12rem),
+    #080e1e;
+  border-radius: 1rem;
+  color: #f8fafc;
+  display: grid;
+  gap: 0.15rem 1rem;
+  grid-template-columns: 1fr auto;
+  margin: 1rem 0 2rem;
+  padding: 1rem 1.2rem;
+  text-decoration: none;
+  transition: transform 200ms ease;
+}
+
+.md-typeset a.see-system:visited { color: #f8fafc; }
+.md-typeset a.see-system:hover { transform: translateY(-2px); }
+.see-system span { color: #5eead4; font-size: 0.62rem; font-weight: 750; letter-spacing: 0.14em; text-transform: uppercase; }
+.see-system strong { font-size: 1rem; letter-spacing: -0.02em; }
+.see-system em { color: #5eead4; font-style: normal; font-weight: 700; grid-column: 2; grid-row: 1 / 3; }
+
+.studies__more { font-size: 0.9rem; margin: 1rem 0 0; }
+.studies__more a { font-weight: 700; }
 .studies__foot { margin: 0; }
 .studies__foot a { font-weight: 700; }
 
