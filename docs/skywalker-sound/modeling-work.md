@@ -17,7 +17,7 @@ Most of my Skywalker work is the platform that research runs on. This page cover
 
 **Problem**: Close to 13 TiB of audio. Researchers needed specific audio tags for other modeling work, and they needed to confirm that the media they were training on was what it claimed to be. Doing that meant running every step themselves.
 
-**What I built**: I ran light PANNs modeling across all the media files to generate labels and embeddings. Then I built a front-end overlay that plays each file with its labels and lets a person scrub through it to validate what the model said.
+**What I built**: I ran pretrained PANNs for audio classification and embeddings across all the media files. Then I built a front-end overlay that plays each file with its labels and lets a person scrub through it to validate what the model said.
 
 **How I evaluated it**: Human validation in that overlay. A reviewer plays and scrubs the audio against the predicted labels rather than trusting the labels blind. The same review gathered the specific tags other models needed.
 

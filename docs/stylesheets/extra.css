@@ -278,6 +278,13 @@ pre {
   margin-left: auto;
 }
 
+.hero-hub__caption {
+  color: #94a3b8;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  margin-top: 0.75rem;
+}
+
 @keyframes hub-pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.5); }
   50% { box-shadow: 0 0 0 6px rgba(45, 212, 191, 0); }

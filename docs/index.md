@@ -12,7 +12,7 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
     <p class="hero-name">Chris Fiegel</p>
     <p class="hero-disciplines">ML Infrastructure · Distributed Systems · AI</p>
     <h1>I build systems that make hard work easier to trust.</h1>
-    <p class="portfolio-lede">Staff ML platform engineer. I build the systems that train, serve and evaluate models, and I have trained, fine-tuned and deployed them myself (PANNs, BERT, on-prem LLM).</p>
+    <p class="portfolio-lede">Staff ML platform engineer. I build the systems that train, serve and evaluate models. I have also run pretrained PANNs for audio classification and embeddings, fine-tuned BERT, and deployed Qwen on-prem.</p>
     <p class="portfolio-sublede">Now at Skywalker Sound. Previously Staff ML at Procore.</p>
     <div class="portfolio-actions">
       <a class="portfolio-button portfolio-button--primary" href="diagram-studies/#ml-hub">See the ML Hub</a>
@@ -28,9 +28,8 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
       <!-- TODO(Chris): add a resume PDF link here if you settle on one. -->
     </nav>
   </div>
-  <a class="hero-hub" href="diagram-studies/#ml-hub" aria-label="Open the ML Hub study">
+  <a class="hero-hub" href="diagram-studies/#ml-hub" aria-label="Open the ML Hub study. Illustrative dashboard, not live telemetry.">
     <div class="hero-hub__bar">
-      <span class="hero-hub__live"></span>
       <b>ML Hub</b>
       <small>Skywalker Sound</small>
     </div>
@@ -45,6 +44,7 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
       <span>On-prem A100</span><span>CoreWeave</span><span>GCP</span><span>AWS</span><span>Mac Studio</span>
       <em>Open →</em>
     </div>
+    <p class="hero-hub__caption">Illustrative dashboard. Names and usage values are examples, not live telemetry.</p>
   </a>
 </section>
 
@@ -57,7 +57,7 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
 
 <section class="models-row" aria-label="Models I have worked on directly">
   <p>Models I have worked on directly</p>
-  <a href="skywalker-sound/modeling-work/#panns-audio-classification">PANNs audio classification</a>
+  <a href="skywalker-sound/modeling-work/#panns-audio-classification">Pretrained PANNs</a>
   <a href="procore/modeling-work/#bert-fine-tuning">BERT fine-tuning</a>
   <a href="skywalker-sound/modeling-work/#on-prem-llm-deployment">On-prem LLM</a>
   <a href="procore/modeling-work/#acv-prediction">ACV prediction</a>
@@ -75,8 +75,8 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
     <p class="case__headline">Two control planes</p>
     <p>A Ray control plane across on-prem A100s, CoreWeave, GCP, AWS, and Mac Studios, for four research scientists and one MLE. A data control plane for the media itself.</p>
     <div class="case__results">
-      <span>VAE training: 5 months to weeks</span>
-      <span>No more $25k GCP runs</span>
+      <span>VAE: 5 months on GCP, then weeks on-prem</span>
+      <span>Vertex AI runs replaced by on-prem A100s</span>
     </div>
   </div>
   <div class="compute-map" aria-hidden="true">
@@ -217,7 +217,7 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
   <div class="explore-grid">
     <a href="diagram-studies/"><span>Visual artifacts</span><strong>Diagram Studies</strong><em>→</em></a>
     <a href="discussion-points/"><span>How I think</span><strong>Discussion Points</strong><em>→</em></a>
-    <a href="tags/"><span>Browse by subject</span><strong>127 Topics</strong><em>→</em></a>
+    <a href="tags/"><span>Browse by subject</span><strong>Topics</strong><em>→</em></a>
   </div>
 </section>
 

@@ -31,11 +31,11 @@ I am not a pure research scientist, and I do not try to sell myself as one. I bu
 | ML lifecycle | Built a training, registry, evaluation, promotion, deployment, and monitoring platform adopted by four teams. |
 | Reliable AI | Built a Google ADK document workflow with OCR, tool calls, structured interpretation, golden datasets, regression evaluation, tracing, and human-review gates. |
 | Self-service impact | Reduced an engineer-assisted sales workflow from several days or a week to about one hour for 10 to 15 users across three teams. |
-| Revenue impact | Designed production workflows for ACV prediction systems associated with more than $8 million in annual upsell revenue. |
+| Revenue impact | Data scientists built ACV prediction models with AutoGluon to predict an ACV target for upsell prioritization. They handed the models to me to optimize, containerize, and deploy to production, where I added ML decorators for logging and metric tracking. I owned the pipeline and the model registry, and the CSM team used the scores. $8M+ is annual upsell revenue on accounts these models scored. It is not revenue attributed solely to the model: the models raised those accounts as prime upsell targets, and those upsells closed. |
 | Orchestration | Refactored Airflow into reusable OOP components, decorators, and configuration-driven templates, reducing cost by 60% and delivery from weeks to hours. |
-| Model deployment | Reduced deployment time from four weeks to one week and improved model-deployment efficiency by 85% through shared registry and deployment capabilities. |
+| Model deployment | Reduced model-deployment time from four weeks to one week. Separately, config-based deploys for the 8 models that existed before I joined took new-model DAG work from 2 to 3 sprints to an hour or two. |
 | Research compute | Built a self-service Ray control plane across approximately 40 Linux and Mac machines, including GPU resources, health, history, logs, recovery, and observability. |
-| Audio discovery | Built metadata exploration and LLM-assisted enrichment workflows for terabytes of sound using PANNs and structured extraction. |
+| Audio discovery | Built metadata exploration and LLM-assisted enrichment workflows for terabytes of sound using pretrained PANNs and structured extraction. |
 | Technical leadership | Led eight engineers at Disney/Hulu with weekly one-on-ones, hiring support, performance coaching, technical direction, and delivery ownership. |
 | Mentorship | Helped engineers earn promotions and broader ownership; taught recurring GPT, Snowflake, and Google ADK sessions to groups of 10 to 20 employees. |
 | Data scale | Built Hive and Spark benchmarking for more than 10 TB of data and increased metric deployment frequency from twice weekly to daily. |
@@ -114,7 +114,7 @@ For behavioral questions, I try to keep it simple: what was happening, what I ow
 - Led junior through senior engineers with weekly one-on-ones and technical direction.
 - Supported hiring, performance coaching, delivery planning, and stakeholder communication.
 - Guided three engineers through successful project delivery and helped one earn a promotion.
-- Directed Marketing Mix Modeling delivery across Disney brands and improved metric-driven decision-making by 15%.
+- Built the Marketing Mix Modeling datasets used across the Disney streaming brands.
 - Managed delays and competing expectations by translating technical constraints into recovery plans and explicit business choices.
 
 ### Building Trust in an AI Workflow

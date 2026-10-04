@@ -11,9 +11,9 @@ hide:
 
 <div class="studies">
 
-<p class="section-eyebrow">Local studies</p>
+<p class="section-eyebrow">Systems in practice</p>
 <h2>Diagram studies.</h2>
-<p class="studies__lede">The words live in this file. The motion lives in the studies styles.</p>
+<p class="studies__lede">These diagrams show how I turn manual workflows into systems people can run, review, and recover themselves.</p>
 
 <section class="study" id="before-after">
   <p class="section-eyebrow">01 · Before / after</p>
@@ -39,7 +39,7 @@ hide:
           <li>Two A100s per scientist, per model</li>
           <li>Log in and check the bucket mounts</li>
           <li>Shard the model yourself and hope</li>
-          <li>Push to GCP: $25k+ a run</li>
+          <li>Vertex AI jobs, running for weeks or months</li>
         </ol>
       </article>
       <article class="ba__card ba__card--after">
@@ -48,11 +48,12 @@ hide:
           <li>All 12 A100s, pools moved in minutes</li>
           <li>Mounts abstracted, checked in the hub</li>
           <li>Run jobs at will, usage tracked</li>
-          <li>VAE training: 5 months to weeks</li>
+          <li>VAE: 5 months on GCP, then weeks</li>
         </ol>
       </article>
     </div>
   </div>
+  <p class="studies__more"><a href="../skywalker-sound/key-projects/#impact">What the five months and the GCP runs measured →</a></p>
 
   <div class="ba">
     <input type="radio" name="ba-pro" id="ba-pro-before">
@@ -200,7 +201,8 @@ hide:
 <section class="study" id="ml-hub">
   <p class="section-eyebrow">05 · ML Hub</p>
   <h2>Five clusters, one place to look.</h2>
-  <p class="studies__note">Pick a cluster. The panel shows its nodes, CPU and GPU, what is mounted, and the Grafana usage for the pool.</p>
+  <p class="studies__note">Pick a cluster to see the kind of detail the hub shows: nodes, CPU and GPU, mounts, and usage.</p>
+  <p class="studies__note">Illustrative dashboard. Names and usage values are examples, not live telemetry.</p>
 
   <div class="hub">
     <input type="radio" name="hub" id="hub-c1" checked>
@@ -290,7 +292,7 @@ hide:
           <span>mac-01 · 12 CPU · M2 Ultra</span><span>mac-02 · 12 CPU · M2 Ultra</span><span class="is-down">mac-03 · recovering</span>
           <span>mac-04 · 12 CPU · M2 Ultra</span><span>mac-05 · 12 CPU · M2 Ultra</span>
         </div>
-        <p class="hub__line">mac-03 dropped mid-run. The hub marked it, kept the job moving, and recovery is one action.</p>
+        <p class="hub__line">Example status, not a recorded incident: a Mac drops mid-run, the hub marks it, the job keeps moving, and recovery is one action.</p>
       </div>
       <div class="hub__panel hub__panel--c5">
         <p class="ba__where">eval-sweep · GPU pool · Reserved</p>
@@ -308,7 +310,7 @@ hide:
         <div class="hub__nodes">
           <span>node-31 · 32 CPU · A100</span><span>node-32 · 32 CPU · A100</span>
         </div>
-        <p class="hub__line">Two A100s stay reserved for eval pipelines. The other ten stay busy with training.</p>
+        <p class="hub__line">Example pool. In practice, ten of the twelve A100s stay on training, and two are held for evaluation pipelines that run a few times a week. <a href="../skywalker-sound/key-projects/#impact">Skywalker impact notes →</a></p>
       </div>
     </div>
   </div>
@@ -350,6 +352,6 @@ hide:
   <p class="studies__more"><a href="../glassdoor/key-projects/">Glassdoor project notes →</a> · <a href="../autodesk/key-projects/">Autodesk project notes →</a></p>
 </section>
 
-<p class="studies__foot"><a href="./">Back to the homepage</a></p>
+<p class="studies__foot"><a href="../">Back to the homepage</a></p>
 
 </div>

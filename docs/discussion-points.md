@@ -37,17 +37,17 @@ Two calls I made that shaped everything after them.
 
 ### Shared Ray pools instead of per-machine setup (Skywalker Sound)
 
-- **Situation**: Applied scientists were limited to two A100s per data scientist per model. They logged in, checked their bucket mounts, sharded their own models, and did the ops themselves. Finished runs went to GCP for training at more than $25k per run.
+- **Situation**: Applied scientists were limited to two A100s per data scientist per model. They logged in, checked their bucket mounts, sharded their own models, and did the ops themselves. A finished run went to GCP: mount the data, spin up containers, create Vertex AI jobs, and leave it running for weeks or months, at more than $25k a run.
 - **Decision**: Put all of the compute behind shared Ray pools and a control plane, with bucket mounting abstracted away and visible in the hub, instead of making each researcher set up machines.
 - **Tradeoff**: The platform team took on the operational load of running shared pools across very different machines. I kept that manageable by building pool changes as click-ops in the hub, so swapping work to a new pool takes a few clicks, on demand.
-- **Result**: All 12 A100s are available to the team and stay fully utilized, except two reserved for eval pipelines. Added CoreWeave H100 and H200 nodes run at 100% saturation. The $25k cloud runs are gone, and VAE training went from five months to weeks.
+- **Result**: All 12 A100s are available, and pools can be moved in minutes. Ten stay in use for training, and two are held for evaluation pipelines that run a few times a week. CoreWeave added eight H100s and H200s, which stay fully in use. The Vertex AI runs were replaced by the on-prem cluster. VAE training took five months on GCP and came down to weeks on-prem. [Skywalker impact notes](skywalker-sound/key-projects.md#impact).
 
 ### Data science in the cloud, with a registry (Procore)
 
 - **Situation**: Data scientists developed models on their own computers, and getting a model deployed took about four weeks.
 - **Decision**: I got buy-in to move the data science development workflow into the cloud, bring in a model registry, and move workloads to EKS.
 - **Tradeoff**: Data scientists had to change how they worked every day, so getting agreement mattered as much as the tooling.
-- **Result**: Model deployment time went from 4 weeks to 1 week, and model deployment efficiency improved by 85%. That workflow became the base of the lifecycle platform four teams adopted.
+- **Result**: Model deployment time went from 4 weeks to 1 week. That workflow became the base of the lifecycle platform four teams adopted.
 
 The review-gate decision for the Procore document workflow is in [Reliable AI and Human Review](#reliable-ai-and-human-review) below and on the [Procore key projects page](procore/key-projects.md#technical-direction).
 

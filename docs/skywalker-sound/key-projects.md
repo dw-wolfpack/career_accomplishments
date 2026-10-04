@@ -23,11 +23,11 @@ tags:
 
 ## Impact
 
-**Before**: Applied scientists were limited to two A100s per data scientist per model. They logged in, checked that their buckets were mounted, sharded the model for training, and hoped it worked. They did all of that ops work themselves. Once a run was ready, they pushed it to GCP to train, at a cost of more than $25k per run.
+**Before**: Applied scientists were limited to two A100s per data scientist per model. They logged in, checked that their buckets were mounted, sharded the model for training, and hoped it worked. They did all of that ops work themselves. A GCP run meant mounting the data, spinning up containers, creating Vertex AI jobs, and leaving it running for weeks or months, at a cost of more than $25k a run.
 
-**After**: All 12 A100s are available to them, and they can move between Ray pools in minutes. Bucket mounting is abstracted away and can be checked in the hub, and there are CPU-only machines for work that does not need a GPU. They run jobs when they want to, and metrics track usage. Every A100 stays fully utilized except two reserved for eval pipelines. We added CoreWeave nodes with H100s and H200s, and those run at 100% saturation.
+**After**: All 12 A100s are available, and they can move between Ray pools in minutes. Bucket mounting is abstracted away and can be checked in the hub, and there are CPU-only machines for work that does not need a GPU. They run jobs when they want to, and metrics track usage. Ten of the twelve A100s are always in use for training. Two are held for evaluation pipelines that run a few times a week. We later added CoreWeave nodes, eight H100s and H200s, and those stay fully in use.
 
-**Result**: No more $25k cloud runs and much faster turnaround. VAE training went from five months before I joined to weeks.
+**Result**: Those Vertex AI runs were replaced by the on-prem A100 Ray cluster, and more recently by the CoreWeave nodes. VAE training took five months on GCP. Moving it on-prem, with faster turnaround on the underlying model architecture, let the research scientist and me bring that down to weeks.
 
 ## Projects
 
@@ -35,7 +35,7 @@ tags:
 
     - **One elastic pool**: The control plane treats heterogeneous hardware as one elastic pool. Mac Studios join the Ray cluster dynamically through a Go binary that tracks their usage, so research workloads scale across every available machine as we add resources.
 
-- **Modeling and Audio Metadata** <a id="modeling-and-audio-metadata"></a>: Ran PANNs audio classification across close to 13 TiB of sound files to generate labels and embeddings, and built a front-end overlay that plays each file with its labels so people can scrub through and validate them. Deployed a Qwen model on-prem with Ray Serve and vLLM on A100s, connected to our LiteLLM instance, to evaluate cost savings against hosted models. Used LLM-assisted structured extraction to make the library easier to search. Details on [Modeling and model optimization](modeling-work.md).
+- **Modeling and Audio Metadata** <a id="modeling-and-audio-metadata"></a>: Ran pretrained PANNs for audio classification and embeddings across close to 13 TiB of sound files, and built a front-end overlay that plays each file with its labels so people can scrub through and validate them. Deployed a Qwen model on-prem with Ray Serve and vLLM on A100s, connected to our LiteLLM instance, to evaluate cost savings against hosted models. Used LLM-assisted structured extraction to make the library easier to search. Details on [Modeling and model optimization](modeling-work.md).
 
 - **Platform Control Plane**: Built FastAPI, PostgreSQL, and web services for cluster creation, node enrollment, software upgrades, resource pools, job history, system health, logs, and operational controls.
 

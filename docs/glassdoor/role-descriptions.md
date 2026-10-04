@@ -12,7 +12,7 @@ tags:
 
 **Scope**: Team: started as just me and my engineering manager on the GTM team, then moved to a tools and platform team of 6 engineers under another engineering manager. Users: marketing and data science teams.
 
-- **Senior Software Big Data Engineer (Oct 2019 - Sep 2021)**: Responsible for the ingestion and cleansing of marketing ad data from various sources including Bizible, Facebook Ads, Google Ad Words, and LinkedIn. Worked with the marketing and data science teams to build aggregations and analysis of marketing data using Spark for aggregations and Airflow for orchestration. Participated in POC with the infra team on new technologies including DBT and Spark. 
+- **Senior Software Big Data Engineer (Oct 2019 - Aug 2021)**: Responsible for the ingestion and cleansing of marketing ad data from various sources including Bizible, Facebook Ads, Google Ad Words, and LinkedIn. Worked with the marketing and data science teams to build aggregations and analysis of marketing data using Spark for aggregations and Airflow for orchestration. Participated in POC with the infra team on new technologies including DBT and Spark. 
 
   Initially hired to build out the GTM team with the manager in 2019, but post-COVID reorg led to being moved to the tools and platform team. Worked on the internal anomaly detection application, building Flask apps with a JavaScript front end and PostgreSQL backend. Contributed to the open-source Amundsen data catalog project.
 

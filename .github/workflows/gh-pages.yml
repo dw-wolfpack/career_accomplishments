@@ -24,7 +24,19 @@ jobs:
       - name: Install dependencies 
         run: |
           pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin mkdocs-drawio-file mkdocs-redirects
+      - name: Build a clean site
+        run: mkdocs build --clean --site-dir site
+
+      - name: Fail if retired pages are still in the artifact
+        run: |
+          for p in chapter1 chapter2 chapter3 chapter5 tags/hive tags/microservices; do
+            if [ -e "site/$p/index.html" ]; then
+              echo "retired page still built: $p"
+              exit 1
+            fi
+          done
+
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

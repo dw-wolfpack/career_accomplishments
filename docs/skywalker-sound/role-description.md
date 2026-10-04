@@ -19,6 +19,6 @@ I build the infrastructure that helps applied scientists run their work across L
 
 The technical work includes backend services, automation, cluster management, and observability. Just as important is sitting with researchers and figuring out what they actually need. Research requests are rarely clean platform requirements on day one. My job is to find the repeatable part without getting in the way of the experiment.
 
-I also build and optimize models myself, including audio classification and an on-prem LLM deployment. See [Modeling and model optimization](modeling-work.md).
+I also run pretrained PANNs for audio classification and embeddings, and I deployed Qwen on-prem. See [Modeling and model optimization](modeling-work.md).
 
 Core technologies include Python, PyTorch, PANNs, LLM serving (Ray Serve, vLLM, LiteLLM), Ray, FastAPI, PostgreSQL, Grafana, GCP, CoreWeave, GitLab, Linux, GPU infrastructure, macOS, environment management, and web application development.

@@ -39,7 +39,7 @@ tags:
 
 1. **Shared ML lifecycle platform**: Built an internal platform for model training, registry, evaluation, promotion, deployment, and monitoring that four teams adopted. It standardized versioning, release gates, error checks, WMAPE-based evaluation, and human review across those teams.
 
-2. **Model deployment and registry**: Designed a cloud-based data science workflow on AWS SageMaker, Terraform, DVC, and GitHub, and built the AWS Model Registry with GitHub Actions deployment. Model deployment time went from 4 weeks to 1 week, and model deployment efficiency improved by 85%.
+2. **Model deployment and registry**: Designed a cloud-based data science workflow on AWS SageMaker, Terraform, DVC, and GitHub, and built the AWS Model Registry with GitHub Actions deployment. Model deployment time for that workflow went from 4 weeks to 1 week. Separately, a new model used to wait on an engineer to write its DAG. I took the 8 models that existed before I joined and moved them to a config-based deployment, so a config update publishes the DAG and the model. That went from 2 to 3 sprints to an hour or two.
 
 3. **ACV prediction models**: Data scientists built ACV prediction models with AutoGluon to predict an ACV target for upsell prioritization. They handed the models to me to optimize, containerize, and deploy to production, where I added ML decorators for logging and metric tracking. I owned the pipeline and the model registry, and the CSM team used the scores. $8M+ is annual upsell revenue on accounts these models scored. It is not revenue attributed solely to the model: the models raised those accounts as prime upsell targets, and those upsells closed. Evaluation details are on [Modeling and model optimization](modeling-work.md#acv-prediction).
 
@@ -58,7 +58,7 @@ tags:
 - **Situation**: Data scientists developed models on their own computers, and getting a model deployed took about four weeks.
 - **Decision**: I got buy-in to move the data science development workflow into the cloud, bring in a model registry, and move workloads to EKS.
 - **Tradeoff**: Data scientists had to change how they worked every day, so getting agreement mattered as much as the tooling.
-- **Result**: Model deployment time went from 4 weeks to 1 week, and model deployment efficiency improved by 85%. That workflow became the base of the lifecycle platform four teams adopted.
+- **Result**: Model deployment time went from 4 weeks to 1 week. That workflow became the base of the lifecycle platform four teams adopted. Getting a new model its own DAG is a different change, described under [model deployment and registry](#headline-projects).
 
 ### Review gates instead of one prompt
 

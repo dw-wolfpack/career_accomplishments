@@ -17,11 +17,11 @@ Most of my Procore work was the platform: training, registry, evaluation, promot
 
 **Problem**: Product teams collected contractors' notes through a front-end app, and the notes were classified with a basic call to OpenAI GPT-4.5. I was asked to classify the notes into categories, but depending on who you asked, you got a different set of categories.
 
-**What I built**: I pulled 3,000 logs and used GPT-4.5 to suggest classifications, then had subject-matter experts sign off on them. That gave us five agreed categories and a 3,000-log golden dataset. I took a BERT model from Hugging Face, fine-tuned it on 7,000 to 10,000 logs using that golden set as ground truth, and deployed it self-hosted on EKS to classify all of the logs. Its output fed another model downstream.
+**What I built**: I pulled 3,000 logs, used GPT-4.5 to suggest classifications, and had subject-matter experts sign off. That gave us five agreed categories and a 3,000-log golden set. I fed that golden set into GPT-4.5 and LangChain loops to label a training corpus of 7,000 to 10,000 logs. A validation loop flagged labels it was unsure about, and I reviewed those. I tested bert-base-uncased and distilbert-base-uncased, and landed on distilbert-base-uncased because it was smaller and gave the same outcome. I fine-tuned it on the 7,000 to 10,000 logs with a 70/30 train and validation split, and deployed it self-hosted on EKS to classify the logs. Its output fed another model downstream.
 
-**How I evaluated it**: F1 against the golden dataset of 3,000 logs, labeled with GPT-4.5's help and approved by subject-matter experts.
+**How I evaluated it**: Weighted F1, the default metric for this fine-tuning setup. The 70/30 split is inside the 7,000 to 10,000 log corpus. After fine-tuning, the 3,000 golden logs were the baseline validation. I am not calling that an independent test: the golden set is what the labeling loops were built from.
 
-**Result**: One agreed set of categories and a self-hosted model on EKS classifying every log. It was much cheaper and much faster than calling GPT-4.5, and it gave the downstream model a clean input.
+**Result**: Five agreed categories, with the smaller DistilBERT model giving the same outcome as bert-base-uncased, running self-hosted on EKS and feeding a downstream model.
 
 ## Production model and container optimization
 
