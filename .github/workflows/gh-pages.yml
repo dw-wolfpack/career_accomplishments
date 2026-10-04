@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies 
         run: |
-          pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin mkdocs-drawio-file
+          pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin mkdocs-drawio-file mkdocs-redirects
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
         env:

@@ -8,10 +8,12 @@ nav:
     - Skywalker Sound:
       - Role Description - Skywalker Sound: skywalker-sound/role-description.md
       - Key Projects and Achievements - Skywalker Sound: skywalker-sound/key-projects.md
+      - Modeling and Model Optimization - Skywalker Sound: skywalker-sound/modeling-work.md
       - Lessons and Working Principles - Skywalker Sound: skywalker-sound/lessons-learned.md
     - Procore:
       - Role Descriptions - Procore: procore/role-descriptions.md
       - Key Projects and Achievements - Procore: procore/key-projects.md
+      - Modeling and Model Optimization - Procore: procore/modeling-work.md
       - Lessons Learned - Procore: procore/lessons-learned.md
     - Disney / Hulu:
       - Role Descriptions - Disney / Hulu: disney/role-descriptions.md
@@ -29,7 +31,7 @@ nav:
     - Products and Tools: independent-work/products-and-tools.md
     - Writing and Creative Work: independent-work/writing-and-creative-work.md
   - Beyond Engineering: beyond-engineering.md
-  - TL;DR: chapter7.md
+  - TL;DR: tldr.md
 theme:
   name: material
   custom_dir: overrides
@@ -74,7 +76,13 @@ plugins:
   - drawio_file
   - tags:
       tags_file: tags.md
+  - redirects:
+      redirect_maps:
+        chapter4.md: discussion-points.md
+        chapter7.md: tldr.md
+markdown_extensions:
+  - md_in_html
 extra_css:
-  - stylesheets/extra.css?v=20261003h
+  - stylesheets/extra.css?v=20261003i
 extra_javascript:
   - javascripts/personal-universe.js?v=20261003

@@ -12,12 +12,21 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
     <p class="hero-name">Chris Fiegel</p>
     <p class="hero-disciplines">ML Infrastructure · Distributed Systems · AI</p>
     <h1>I build systems that make hard work easier to trust.</h1>
-    <p class="portfolio-lede">Distributed research infrastructure at Skywalker Sound. Previously Staff ML at Procore. I build platforms that turn complicated ML workflows into systems researchers and engineers can actually use.</p>
+    <p class="portfolio-lede">Staff ML platform engineer. I build the systems that train, serve and evaluate models, and I have trained, fine-tuned and deployed them myself (PANNs, BERT, on-prem LLM).</p>
+    <p class="portfolio-sublede">Now at Skywalker Sound. Previously Staff ML at Procore.</p>
     <div class="portfolio-actions">
       <a class="portfolio-button portfolio-button--primary" href="diagram-studies/#ml-hub">See the ML Hub</a>
       <a class="portfolio-button portfolio-button--secondary" href="diagram-studies/">Diagram Studies</a>
       <a class="portfolio-text-link" href="https://www.linkedin.com/in/chrisfiegel/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
     </div>
+    <nav class="start-here" aria-label="Start here">
+      <span>Start here</span>
+      <a href="tldr/">TL;DR</a>
+      <a href="skywalker-sound/modeling-work/">Modeling work</a>
+      <a href="procore/key-projects/">Procore platform</a>
+      <a href="skywalker-sound/key-projects/">Skywalker platform</a>
+      <!-- TODO(Chris): add a resume PDF link here if you settle on one. -->
+    </nav>
   </div>
   <a class="hero-hub" href="diagram-studies/#ml-hub" aria-label="Open the ML Hub study">
     <div class="hero-hub__bar">
@@ -26,14 +35,14 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
       <small>Skywalker Sound</small>
     </div>
     <ul class="hero-hub__rows">
-      <li><strong>audio-train</strong><small>8 × A100</small><i style="--v:82%"></i></li>
+      <li><strong>audio-train</strong><small>10 × A100</small><i style="--v:98%"></i></li>
       <li><strong>metadata-etl</strong><small>192 CPU</small><i style="--v:58%"></i></li>
       <li><strong>search-index</strong><small>128 CPU</small><i style="--v:34%"></i></li>
       <li class="is-warn"><strong>mac-batch</strong><small>1 recovering</small><i style="--v:71%"></i></li>
-      <li><strong>eval-sweep</strong><small>3 × A100</small><i style="--v:12%"></i></li>
+      <li><strong>eval-sweep</strong><small>2 × A100 reserved</small><i style="--v:12%"></i></li>
     </ul>
     <div class="hero-hub__foot">
-      <span>GCP</span><span>AWS</span><span>On-prem A100</span><span>Mac Studio</span>
+      <span>On-prem A100</span><span>CoreWeave</span><span>GCP</span><span>AWS</span><span>Mac Studio</span>
       <em>Open →</em>
     </div>
   </a>
@@ -42,8 +51,17 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
 <section class="impact-metrics" aria-label="Impact">
   <div><strong>~40</strong><span>machines across GCP, AWS, on-prem A100s, and Mac Studios</span></div>
   <div><strong>5</strong><span>Ray clusters, one control plane</span></div>
-  <div><strong>$8M+</strong><span>revenue-associated models</span></div>
+  <div><strong>$8M+</strong><span>annual upsell revenue on accounts scored by ACV prediction models <a href="procore/modeling-work/#acv-prediction">how it's counted</a></span></div>
   <div><strong>60%</strong><span>orchestration cost reduction</span></div>
+</section>
+
+<section class="models-row" aria-label="Models I have worked on directly">
+  <p>Models I have worked on directly</p>
+  <a href="skywalker-sound/modeling-work/#panns-audio-classification">PANNs audio classification</a>
+  <a href="procore/modeling-work/#bert-fine-tuning">BERT fine-tuning</a>
+  <a href="skywalker-sound/modeling-work/#on-prem-llm-deployment">On-prem LLM</a>
+  <a href="procore/modeling-work/#acv-prediction">ACV prediction</a>
+  <em>See modeling work: <a href="skywalker-sound/modeling-work/">Skywalker</a> · <a href="procore/modeling-work/">Procore</a> →</em>
 </section>
 
 <section class="through-line">
@@ -55,14 +73,18 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
     <p class="section-eyebrow">Now</p>
     <h2>Skywalker Sound</h2>
     <p class="case__headline">Two control planes</p>
-    <p>A Ray control plane across GCP, AWS, on-prem A100s, and Mac Studios, for four research scientists and one MLE. A data control plane for the media itself.</p>
-    <div class="feature-tags"><span>Ray</span><span>Data</span><span>GCP</span><span>AWS</span><span>A100</span></div>
+    <p>A Ray control plane across on-prem A100s, CoreWeave, GCP, AWS, and Mac Studios, for four research scientists and one MLE. A data control plane for the media itself.</p>
+    <div class="case__results">
+      <span>VAE training: 5 months to weeks</span>
+      <span>No more $25k GCP runs</span>
+    </div>
   </div>
   <div class="compute-map" aria-hidden="true">
     <div class="compute-map__sources">
+      <span>A100s</span>
+      <span>CoreWeave</span>
       <span>GCP</span>
       <span>AWS</span>
-      <span>A100s</span>
       <span>Mac Studios</span>
     </div>
     <div class="compute-map__plane">
@@ -102,7 +124,8 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
     <p>Training, registry, evaluation, human review, promotion, deployment, and monitoring through one shared platform.</p>
     <div class="case__results">
       <span>4 teams adopted</span>
-      <span>A week to an hour</span>
+      <span>15 models in production</span>
+      <span>Model deploys: 4 weeks to 1</span>
     </div>
   </div>
   <ol class="lifecycle" aria-label="Shared model lifecycle">
@@ -115,15 +138,6 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
   </ol>
 </a>
 
-<section class="independent-band">
-  <p class="section-eyebrow">Independent</p>
-  <div class="independent-row">
-    <a href="independent-work/products-and-tools/#northpaw"><span>NorthPaw</span><strong>Dog safety without the black box</strong></a>
-    <a href="independent-work/products-and-tools/#fittrack"><span>FitTrack</span><strong>The plan after life happens</strong></a>
-    <a href="independent-work/writing-and-creative-work/#fractured-sky"><span>Fractured Sky</span><strong>Six weeks to draft. Years to finish.</strong></a>
-  </div>
-</section>
-
 <section class="portfolio-section career-section">
   <div class="portfolio-section__heading portfolio-section__heading--compact">
     <div><p class="section-eyebrow">Career</p><h2>Built from the whole lifecycle</h2></div>
@@ -135,6 +149,16 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
     <a class="career-stop" href="disney/role-descriptions/"><span class="career-dot"></span><span class="career-years">2021 · 2022</span><strong>Disney / Hulu</strong><small>Lead data engineer</small></a>
     <a class="career-stop" href="procore/role-descriptions/"><span class="career-dot"></span><span class="career-years">2022 · 2026</span><strong>Procore</strong><small>Staff ML platform</small></a>
     <a class="career-stop career-stop--active" href="skywalker-sound/role-description/"><span class="career-dot"></span><span class="career-years">2026 · NOW</span><strong>Skywalker Sound</strong><small>Research infrastructure</small></a>
+  </div>
+</section>
+
+<section class="independent-band">
+  <p class="section-eyebrow">Independent</p>
+  <p class="independent-note">NorthPaw is a deterministic risk engine by design; I know when not to use ML.</p>
+  <div class="independent-row">
+    <a href="independent-work/products-and-tools/#northpaw"><span>NorthPaw</span><strong>Dog safety without the black box</strong></a>
+    <a href="independent-work/products-and-tools/#fittrack"><span>FitTrack</span><strong>The plan after life happens</strong></a>
+    <a href="independent-work/writing-and-creative-work/#fractured-sky"><span>Fractured Sky</span><strong>Six weeks to draft. Years to finish.</strong></a>
   </div>
 </section>
 
@@ -162,7 +186,7 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
     <a class="universe-node universe-node--registry universe-node--outer" href="procore/key-projects/#procore-key-projects"><span class="universe-node__body"><i></i><b>Model Registry</b></span></a>
     <a class="universe-node universe-node--data universe-node--middle" href="glassdoor/key-projects/#glassdoor-key-projects"><span class="universe-node__body"><i></i><b>Spark + Airflow</b></span></a>
     <a class="universe-node universe-node--etl universe-node--outer" href="autodesk/key-projects/#autodesk-key-projects"><span class="universe-node__body"><i></i><b>ETL</b></span></a>
-    <a class="universe-node universe-node--evaluation universe-node--middle" href="procore/key-projects/#additional-platform-and-ai-work"><span class="universe-node__body"><i></i><b>Evaluation</b></span></a>
+    <a class="universe-node universe-node--evaluation universe-node--middle" href="procore/modeling-work/#evaluation-and-monitoring"><span class="universe-node__body"><i></i><b>Evaluation</b></span></a>
     <a class="universe-node universe-node--product universe-node--personal" href="independent-work/products-and-tools/"><span class="universe-node__body"><i></i><b>Product Builder</b></span></a>
     <a class="universe-node universe-node--writer universe-node--personal" href="independent-work/writing-and-creative-work/#fractured-sky"><span class="universe-node__body"><i></i><b>Writer</b></span></a>
     <a class="universe-node universe-node--endurance universe-node--personal" href="beyond-engineering/"><span class="universe-node__body"><i></i><b>Endurance</b></span></a>
@@ -192,7 +216,7 @@ description: ML infrastructure, distributed systems, and AI. I build systems tha
   <p class="section-eyebrow">Go deeper</p>
   <div class="explore-grid">
     <a href="diagram-studies/"><span>Visual artifacts</span><strong>Diagram Studies</strong><em>→</em></a>
-    <a href="chapter4/"><span>How I think</span><strong>Discussion Points</strong><em>→</em></a>
+    <a href="discussion-points/"><span>How I think</span><strong>Discussion Points</strong><em>→</em></a>
     <a href="tags/"><span>Browse by subject</span><strong>127 Topics</strong><em>→</em></a>
   </div>
 </section>

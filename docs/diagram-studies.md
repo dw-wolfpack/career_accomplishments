@@ -25,7 +25,7 @@ hide:
     <div class="ba__head">
       <div>
         <p class="ba__where">Skywalker Sound</p>
-        <h3>One machine, then one control plane</h3>
+        <h3>Two A100s each, then all twelve</h3>
       </div>
       <div class="ba__switch">
         <label for="ba-sky-before">Before</label>
@@ -36,19 +36,19 @@ hide:
       <article class="ba__card ba__card--before">
         <span>On the machine</span>
         <ol>
-          <li>SSH into a Mac Studio</li>
-          <li>Mount the storage</li>
-          <li>Check whether the node is free</li>
-          <li>Read the failure on that machine</li>
+          <li>Two A100s per scientist, per model</li>
+          <li>Log in and check the bucket mounts</li>
+          <li>Shard the model yourself and hope</li>
+          <li>Push to GCP: $25k+ a run</li>
         </ol>
       </article>
       <article class="ba__card ba__card--after">
         <span>On the control plane</span>
         <ol>
-          <li>Create the cluster</li>
-          <li>Submit the job</li>
-          <li>Read history, logs, and health</li>
-          <li>Recover the node from the same place</li>
+          <li>All 12 A100s, pools moved in minutes</li>
+          <li>Mounts abstracted, checked in the hub</li>
+          <li>Run jobs at will, usage tracked</li>
+          <li>VAE training: 5 months to weeks</li>
         </ol>
       </article>
     </div>
@@ -130,7 +130,7 @@ hide:
 <section class="study" id="lifecycle-gate">
   <p class="section-eyebrow">03 · Lifecycle gate</p>
   <h2>A model can be held.</h2>
-  <p class="studies__note">Train and registry are behind it. Deploy stays dark until review lets it through.</p>
+  <p class="studies__note">Train and registry are behind it. The model has to clear its WMAPE threshold on the golden dataset, then human review, before deploy lights up.</p>
 
   <div class="gate">
     <input type="radio" name="gate" id="gate-hold" checked>
@@ -146,7 +146,7 @@ hide:
       <ol>
         <li>Train</li>
         <li>Registry</li>
-        <li>Evaluate</li>
+        <li>WMAPE gate</li>
         <li class="is-gate">Review</li>
         <li>Deploy</li>
         <li>Monitor</li>
@@ -154,7 +154,7 @@ hide:
       <div class="gate__model"><b>Model</b><small class="gate__why gate__why--hold">Held for human review</small><small class="gate__why gate__why--pass">Review passed</small></div>
     </div>
   </div>
-  <p class="studies__more"><a href="../procore/key-projects/#additional-platform-and-ai-work">Procore project notes →</a></p>
+  <p class="studies__more"><a href="../procore/modeling-work/#evaluation-and-monitoring">How the gate is evaluated →</a> <a href="../procore/key-projects/">Procore project notes →</a></p>
 </section>
 
 <section class="study" id="oop-swap">
@@ -209,29 +209,30 @@ hide:
     <input type="radio" name="hub" id="hub-c4">
     <input type="radio" name="hub" id="hub-c5">
     <div class="hub__list">
-      <label for="hub-c1" class="hub__cluster"><span class="hub__dot"></span><strong>audio-train</strong><small>GPU pool · 8 nodes</small></label>
+      <label for="hub-c1" class="hub__cluster"><span class="hub__dot"></span><strong>audio-train</strong><small>GPU pool · 10 nodes</small></label>
       <label for="hub-c2" class="hub__cluster"><span class="hub__dot"></span><strong>metadata-etl</strong><small>Linux pool · 6 nodes</small></label>
       <label for="hub-c3" class="hub__cluster"><span class="hub__dot"></span><strong>search-index</strong><small>Linux pool · 4 nodes</small></label>
       <label for="hub-c4" class="hub__cluster"><span class="hub__dot"></span><strong>mac-batch</strong><small>Mac pool · 5 nodes</small></label>
-      <label for="hub-c5" class="hub__cluster"><span class="hub__dot"></span><strong>eval-sweep</strong><small>GPU pool · 3 nodes</small></label>
+      <label for="hub-c5" class="hub__cluster"><span class="hub__dot"></span><strong>eval-sweep</strong><small>GPU pool · reserved for eval</small></label>
     </div>
     <div class="hub__panels">
       <div class="hub__panel hub__panel--c1">
         <p class="ba__where">audio-train · GPU pool · Healthy</p>
         <div class="hub__grid">
-          <div><small>Nodes</small><b>8</b></div>
-          <div><small>CPU</small><b>256</b></div>
-          <div><small>GPU</small><b>8×A100</b></div>
+          <div><small>Nodes</small><b>10</b></div>
+          <div><small>CPU</small><b>320</b></div>
+          <div><small>GPU</small><b>10×A100</b></div>
           <div><small>Bucket</small><b>media-train</b></div>
         </div>
         <div class="hub__meters">
-          <div class="hub__meter"><span>GPU</span><i style="--v:82%"></i><b>82%</b></div>
+          <div class="hub__meter"><span>GPU</span><i style="--v:98%"></i><b>98%</b></div>
           <div class="hub__meter"><span>CPU</span><i style="--v:41%"></i><b>41%</b></div>
           <div class="hub__meter"><span>Mem</span><i style="--v:63%"></i><b>63%</b></div>
         </div>
         <div class="hub__nodes">
           <span>node-01 · 32 CPU · A100</span><span>node-02 · 32 CPU · A100</span><span>node-03 · 32 CPU · A100</span><span>node-04 · 32 CPU · A100</span>
           <span>node-05 · 32 CPU · A100</span><span>node-06 · 32 CPU · A100</span><span>node-07 · 32 CPU · A100</span><span>node-08 · 32 CPU · A100</span>
+          <span>node-09 · 32 CPU · A100</span><span>node-10 · 32 CPU · A100</span>
         </div>
         <p class="hub__line">Grafana tracks usage, idle time, and recovery for this pool. Bucket mounts and pool changes are recorded here.</p>
       </div>
@@ -292,11 +293,11 @@ hide:
         <p class="hub__line">mac-03 dropped mid-run. The hub marked it, kept the job moving, and recovery is one action.</p>
       </div>
       <div class="hub__panel hub__panel--c5">
-        <p class="ba__where">eval-sweep · GPU pool · Idle</p>
+        <p class="ba__where">eval-sweep · GPU pool · Reserved</p>
         <div class="hub__grid">
-          <div><small>Nodes</small><b>3</b></div>
-          <div><small>CPU</small><b>96</b></div>
-          <div><small>GPU</small><b>3×A100</b></div>
+          <div><small>Nodes</small><b>2</b></div>
+          <div><small>CPU</small><b>64</b></div>
+          <div><small>GPU</small><b>2×A100</b></div>
           <div><small>Bucket</small><b>media-eval</b></div>
         </div>
         <div class="hub__meters">
@@ -305,9 +306,9 @@ hide:
           <div class="hub__meter"><span>Mem</span><i style="--v:21%"></i><b>21%</b></div>
         </div>
         <div class="hub__nodes">
-          <span>node-31 · 32 CPU · A100</span><span>node-32 · 32 CPU · A100</span><span>node-33 · 32 CPU · A100</span>
+          <span>node-31 · 32 CPU · A100</span><span>node-32 · 32 CPU · A100</span>
         </div>
-        <p class="hub__line">Idle pools are visible, so capacity goes back to training instead of sitting dark.</p>
+        <p class="hub__line">Two A100s stay reserved for eval pipelines. The other ten stay busy with training.</p>
       </div>
     </div>
   </div>

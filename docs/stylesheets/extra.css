@@ -716,6 +716,94 @@ pre {
   max-width: 18ch;
 }
 
+.impact-metrics span a {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 650;
+  margin-top: 0.45rem;
+}
+
+.models-row {
+  align-items: center;
+  border-top: 1px solid var(--cf-line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.6rem;
+  margin: calc(-1 * clamp(2rem, 5vw, 3.5rem)) 0 clamp(4rem, 8vw, 6rem);
+  padding-top: 1.2rem;
+}
+
+.models-row p {
+  color: var(--cf-ink-soft);
+  flex-basis: 100%;
+  font-size: 0.68rem;
+  font-weight: 720;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.3rem;
+  text-transform: uppercase;
+}
+
+.models-row > a {
+  border: 1px solid var(--cf-line);
+  border-radius: 999px;
+  color: var(--cf-ink) !important;
+  font-size: 0.9rem;
+  font-weight: 650;
+  padding: 0.45rem 0.9rem;
+  text-decoration: none;
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.models-row > a:hover { border-color: var(--cf-teal); color: var(--cf-teal) !important; }
+
+.models-row em {
+  color: var(--cf-ink-soft);
+  font-size: 0.9rem;
+  font-style: normal;
+  margin-left: auto;
+}
+
+.portfolio-sublede {
+  color: var(--cf-ink-soft);
+  font-size: 0.95rem;
+  margin: 0.7rem 0 0;
+}
+
+.start-here {
+  align-items: baseline;
+  border-top: 1px solid var(--cf-line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  margin-top: 1.8rem;
+  max-width: 38rem;
+  padding-top: 1rem;
+}
+
+.start-here span {
+  color: var(--cf-ink-soft);
+  font-size: 0.68rem;
+  font-weight: 720;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.start-here a {
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.md-typeset .skills-grid {
+  display: grid;
+  gap: 0 2.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 32em) {
+  .md-typeset .skills-grid { grid-template-columns: 1fr; }
+  .models-row em { margin-left: 0; }
+}
+
 .through-line {
   padding: 0 0 clamp(5rem, 10vw, 8rem);
 }
@@ -965,6 +1053,14 @@ pre {
   min-height: 7.5rem;
   padding: 1.1rem 1.2rem 1.1rem 0;
   text-decoration: none;
+}
+
+.independent-note {
+  color: var(--cf-ink-soft);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.4rem 0 0.8rem;
+  max-width: 40rem;
 }
 
 .independent-row a + a { padding-left: 1.2rem; }

@@ -9,12 +9,16 @@ tags:
   - anomaly detection
   - flask
   - postgres
+  - model serving
 ---
 
 ## Key Projects and Achievements <a id="glassdoor-key-projects"></a>
 
-- **Marketing Data Ingestion and Cleansing**: Developed processes for ingesting and cleansing marketing ad data from Bizible, Facebook Ads, Google Ad Words, and LinkedIn.
-- **Marketing Data Aggregations and Analysis**: Collaborated with marketing and data science teams to build aggregations and analyses of marketing data using Spark and Airflow.
-- **Proof of Concept (POC) Projects**: Worked with the infra team on POC projects for new technologies including DBT and Spark.
-- **Internal Anomaly Detection Application**: Built a Flask app with a JavaScript front end and PostgreSQL backend for internal anomaly detection.
-- **Amundsen Data Catalog**: Contributed to the open-source Amundsen project for the data catalog, which was adopted company-wide post-departure.
+- **Amundsen Data Catalog**: Contributed to the open-source Amundsen data catalog project. The catalog was adopted company-wide after I left.
+
+- **Internal Anomaly Detection Application**: Built a Flask app with a JavaScript front end and PostgreSQL backend for internal anomaly detection. It was used extensively across the organization.
+
+- **Real-time Model Serving**: Started working on real-time model serving, which made the importance of data quality and trust concrete for me.
+- **Marketing Data Ingestion and Aggregation**: Ingested and cleansed marketing ad data from Bizible, Facebook Ads, Google Ad Words, and LinkedIn, then built Spark aggregations orchestrated by Airflow for the marketing and data science teams.
+
+**Other work**: Proofs of concept with the infra team for DBT and Spark.

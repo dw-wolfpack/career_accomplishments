@@ -13,16 +13,16 @@ tags:
 
 ## Lessons Learned <a id="procore-lessons"></a>
 
-- **Cloud-based Workflows**: Gained expertise in designing and developing cloud-based workflows using AWS SageMaker, Terraform, DVC, and GitHub.
+- **Change the workflow before adding tools**: The biggest gain did not come from a new service. It came from getting data scientists off their laptops and into a shared cloud workflow with a registry. Every later improvement depended on that.
 
-- **Model Deployment**: Improved skills in developing model registries and deploying models efficiently using GitHub Actions and Airflow.
+- **A threshold beats an opinion**: Once WMAPE on a golden dataset had to clear a set threshold before promotion, the conversation shifted from whether a model felt better to whether it passed.
 
-- **Data Aggregation and Management**: Enhanced knowledge in custom aggregation workflows using Pandas, Dask, and AWS EKS.
+- **Agree on the labels before training anything**: The BERT work started with people giving different answers about what the categories even were. Getting subject-matter experts to sign off on five categories and a golden set had to come before any fine-tuning.
 
-- **API Development**: Learned to build and manage API workflows using AWS SAM, CloudFormation, and API Gateway.
+- **Measure where the time goes before optimizing**: Decorators that tracked run time and throughput told me what to work on. Without them I would have been guessing, and the inference run time would not have dropped by half.
 
-- **MLOps and Inference**: Advanced skills in MLOps for batched inference jobs and optimized inference job performance.
+- **Trust is a feature**: Sales users did not need a smarter prompt. They needed to see the OCR output, the query, and the table results before accepting an answer. Review gates are what made the faster workflow usable.
 
-- **Data Quality and Integrity**: Developed a comprehensive Data Quality Framework and implemented best practices for maintaining data quality.
+- **Make the good path the easy one**: Four teams adopted the shared lifecycle platform. A shared path only works if using it is easier than building your own path to production.
 
-- **Collaboration and Team Management**: Gained experience in leading a team, collaborating with stakeholders, and managing technical initiatives.
+- **Teaching scales further than doing**: Mentoring two engineers through promotions and running sessions for groups of 10 to 20 spread the practices further than anything I could build alone.

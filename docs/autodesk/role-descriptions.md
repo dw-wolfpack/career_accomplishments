@@ -9,6 +9,8 @@ tags:
   - software engineering
 ---
 
+**Scope**: Team: 8 to 20 people depending on the role. As a senior data engineer, I was one of 11 engineers reporting to an engineering manager and owned 80+ workflows.
+
 - **QA Analyst (Sep 2013 - Dec 2013)**: Initially hired out of college as a QA contractor. Worked with Salesforce, Aprimo, and Informatica. Introduced to Scrum/Agile methodology. Worked directly with the development team to validate code deployment and enhancements for our lead generation team. Worked with the business to validate expected outcomes and created test plans and documentation.
 
 - **Business System Analyst (Dec 2013 - Oct 2014)**: Worked with Salesforce, Aprimo, Informatica, AWS, and Marketo. Used Scrum/Agile methodology. Responsible for various integrations with our Data Lake (into and out from salesforce, marketo etc) platform dealing with customer information and marketing. Responsible for bringing in a new instance of an Enterprise System from the ground up (Marketo). Took multiple courses in development and architecture design focusing on AWS and Cloudera Hadoop training. Recognized globally by the company for taking charge in critical situations. Mentored two interns and worked directly with business owners to groom requirements and create stories for the Dev team. Filled multiple positions within teams when needed.

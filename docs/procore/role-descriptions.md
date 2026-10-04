@@ -9,8 +9,10 @@ tags:
 
 ## Role Descriptions <a id="procore-role-descriptions"></a>
 
-- **Staff Machine Learning Engineer (2021 - Present)**: Designed and developed a cloud-based Data Science workflow using AWS SageMaker, Terraform, DVC, and GitHub, reducing deployment time from 4 weeks to 1 week. Developed the AWS Model Registry for the data science team, implemented deployment processes via GitHub Actions, and improved model deployment efficiency by 85%. Supported 7 Data Scientists with 15 models in production, onboarded new MLE team members, and led various technical initiatives.
+**Scope**: Team: started as the only MLE, then grew to me and 3 other MLEs. Users: 4 teams, with between 2 and 7 data scientists over time. Models in production: 15, served for 7 data scientists, including AutoGluon models and several churn models. Reported to: the Big Data Platform Engineering Manager at first, then directly to the Director of AI.
 
-## 2026 Role Update
+- **Staff Machine Learning Engineer, ML Platform (2022 - February 2026)**: Started by moving data science development off local machines and into the cloud. I designed a workflow on AWS SageMaker, Terraform, DVC, and GitHub that cut model deployment time from 4 weeks to 1 week. I built the AWS Model Registry and GitHub Actions deployment process, which improved model deployment efficiency by 85%, and later moved workloads onto EKS. From there the role grew into a shared ML lifecycle and AI-workflow platform used by four teams, covering training, registry, evaluation, human review, promotion, deployment, and monitoring.
 
-- **Staff Machine Learning Engineer, ML Platform (2022 - February 2026)**: Expanded the role from individual model deployment into a shared ML lifecycle and AI-workflow platform serving multiple teams. Owned systems spanning training, registry, evaluation, human review, promotion, deployment, and monitoring, while mentoring engineers and translating stakeholder needs into reusable platform capabilities.
+  I also did modeling work directly: fine-tuning BERT to classify contractor notes, optimizing production inference containers, and owning the pipeline and registry for the ACV prediction models. See [Modeling and model optimization](modeling-work.md). Along the way I onboarded new MLEs, mentored two junior engineers through promotions, and turned stakeholder needs into reusable platform capabilities.
+
+  Core technologies include Python, AWS SageMaker, EKS, Airflow, Terraform, DVC, GitHub Actions, AutoGluon, BERT and Hugging Face, Google ADK, and Snowflake.

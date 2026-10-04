@@ -13,9 +13,7 @@ tags:
 
 ## Key Projects and Achievements <a id="disney-key-projects"></a>
 
-- **Multi-Touch Attribution Model**: Responsible for building and maintaining the Multi-Touch Attribution Model to track marketing touchpoints and their contributions to conversions.
-
-- **Marketing Mixed Modeling Data Sets**: Developed data sets for Marketing Mixed Modeling to analyze the effectiveness of various marketing channels and optimize marketing spend.
+- **Multi-Touch Attribution and Marketing Mix Modeling**: Responsible for building and maintaining the Multi-Touch Attribution Model, which tracked marketing touchpoints and their contribution to conversions. This was our MMM modeling across all of the business lines during the acquisition, including Hulu, ESPN+, and Disney+. I also built the Marketing Mix Modeling data sets used to judge channel effectiveness and guide marketing spend.
 
 - **Integration of Hulu and Disney Marketing Data**: Led the integration of Hulu's Marketing data with Disney's Dimensional Model using Databricks, Snowflake, and Airflow.
 
